@@ -12,31 +12,62 @@ export const HomePage = () => {
         </div>
         
         <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-4xl mx-auto">
-            {/* Benefit-Driven Headlines */}
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
-              Ship More Orders. <br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Spend Less Money.</span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-4 text-gray-100 drop-shadow-md leading-relaxed">
-              Cut your fulfillment costs by up to 40% while shipping faster from China.
-            </p>
-            <p class="text-lg md:text-xl mb-10 text-gray-200 drop-shadow-md">
-              Same-day processing • 99.6% accuracy • No monthly minimums • Free WMS access
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" class="btn bg-pfc-orange text-white hover:bg-orange-600 border-none text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all font-bold">
-                <i class="fas fa-calculator mr-2"></i>
-                Calculate Your Savings
-              </a>
-              <a href="/pricing" class="btn bg-white text-pfc-blue hover:bg-gray-100 border-none text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all font-bold">
-                <i class="fas fa-chart-line mr-2"></i>
-                See Pricing
-              </a>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Headlines & CTA */}
+            <div class="text-center md:text-left">
+              {/* Benefit-Driven Headlines */}
+              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+                Ship More Orders. <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Spend Less Money.</span>
+              </h1>
+              <p class="text-lg md:text-xl lg:text-2xl mb-4 text-gray-100 drop-shadow-md leading-relaxed">
+                Cut your fulfillment costs by up to 40% while shipping faster from China.
+              </p>
+              <p class="text-base md:text-lg lg:text-xl mb-8 text-gray-200 drop-shadow-md">
+                Same-day processing • 99.6% accuracy • No monthly minimums • Free WMS access
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="/contact" class="btn bg-pfc-orange text-white hover:bg-orange-600 border-none text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all font-bold">
+                  <i class="fas fa-calculator mr-2"></i>
+                  Calculate Your Savings
+                </a>
+                <a href="/pricing" class="btn bg-white text-pfc-blue hover:bg-gray-100 border-none text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all font-bold">
+                  <i class="fas fa-chart-line mr-2"></i>
+                  See Pricing
+                </a>
+              </div>
             </div>
             
-            {/* Trust Badges - Benefit Focused */}
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {/* Right Column - D2C Fulfillment Graphic (Desktop) */}
+            <div class="hidden md:block">
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/static/images/d2c-fulfillment-hero.jpg"
+                  alt="PFC D2C Order Fulfillment Service - Direct-to-consumer shipping from China"
+                  class="w-full h-auto"
+                  width="600"
+                  height="600"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* D2C Fulfillment Graphic (Mobile - Below CTA) */}
+          <div class="md:hidden mt-8">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
+              <img 
+                src="/static/images/d2c-fulfillment-hero.jpg"
+                alt="PFC D2C Order Fulfillment Service - Direct-to-consumer shipping from China"
+                class="w-full h-auto"
+                width="600"
+                height="600"
+              />
+            </div>
+          </div>
+          
+          {/* Trust Badges - Benefit Focused */}
+          <div class="max-w-6xl mx-auto">
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                 <div class="text-3xl font-bold mb-1">$0</div>
                 <p class="text-sm font-semibold">Setup Fees</p>

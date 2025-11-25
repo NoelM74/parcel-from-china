@@ -591,6 +591,61 @@ export const GlobalShippingPage = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Incoterms Guide Infographic */}
+            <div class="mt-16 bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div class="p-8">
+                <div class="text-center mb-8">
+                  <div class="inline-block bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full mb-4 font-semibold text-sm">
+                    📋 SHIPPING TERMS GUIDE
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Understanding Incoterms for Ocean Freight
+                  </h3>
+                  <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Incoterms define who pays for shipping, insurance, and customs duties. Understanding these terms helps you negotiate better with suppliers and plan your total landed costs accurately.
+                  </p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto">
+                  <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-cyan-200">
+                    <img 
+                      src="/static/images/incoterms-guide.png"
+                      alt="PFC Incoterms Guide - Complete guide to shipping terms FOB, CIF, DDP, DDU for ocean freight"
+                      class="w-full h-auto rounded-xl shadow-lg"
+                      loading="lazy"
+                      width="1200"
+                      height="800"
+                    />
+                  </div>
+                </div>
+                
+                <div class="mt-8 grid md:grid-cols-3 gap-6">
+                  <div class="bg-cyan-50 rounded-lg p-6 text-center">
+                    <i class="fas fa-ship text-cyan-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">FOB (Free on Board)</h4>
+                    <p class="text-sm text-gray-600">Supplier delivers to port, you handle ocean freight and import duties</p>
+                  </div>
+                  <div class="bg-cyan-50 rounded-lg p-6 text-center">
+                    <i class="fas fa-anchor text-cyan-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">CIF (Cost, Insurance, Freight)</h4>
+                    <p class="text-sm text-gray-600">Supplier pays ocean freight and insurance, you handle import duties</p>
+                  </div>
+                  <div class="bg-cyan-50 rounded-lg p-6 text-center">
+                    <i class="fas fa-truck text-cyan-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">DDP (Delivered Duty Paid)</h4>
+                    <p class="text-sm text-gray-600">All-inclusive door-to-door service with duties prepaid</p>
+                  </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                  <a href="/contact?service=ocean-freight-consultation" class="btn bg-cyan-600 text-white hover:bg-cyan-700 text-lg px-8 py-4">
+                    <i class="fas fa-comments mr-2"></i>
+                    Talk to an Ocean Freight Expert
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Tab Content - Special Lines */}
