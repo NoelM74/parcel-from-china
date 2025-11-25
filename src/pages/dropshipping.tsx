@@ -587,6 +587,73 @@ export const DropshippingPage = () => {
         </div>
       </section>
 
+      {/* Growth Strategy Infographic */}
+      <section class="py-20 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-3 rounded-full mb-6 font-bold text-sm shadow-lg">
+              📈 PROVEN GROWTH STRATEGIES
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              How to Grow Your Dropshipping Business
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Follow this proven roadmap to scale from your first sale to a profitable, sustainable dropshipping business
+            </p>
+          </div>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-3xl p-6 md:p-10 shadow-2xl border-4 border-gradient-to-r from-orange-400 to-purple-600">
+              <img 
+                src="https://i.postimg.cc/MT5wTRZw/HOW_TO_GROW_YOUR_DROPSHIPPING_BUSINESS.png" 
+                alt="How to Grow Your Dropshipping Business - Complete roadmap from product research to scaling"
+                class="w-full h-auto rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+              <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-orange-500 text-center">
+                <div class="text-4xl mb-3">🎯</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Step 1: Product Research</h3>
+                <p class="text-sm text-gray-600">Find winning products using proven research tools and market trends</p>
+              </div>
+              
+              <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-purple-500 text-center">
+                <div class="text-4xl mb-3">🚀</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Step 2: Launch & Test</h3>
+                <p class="text-sm text-gray-600">Start with PFC's zero-minimum fulfillment and test products risk-free</p>
+              </div>
+              
+              <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-blue-500 text-center">
+                <div class="text-4xl mb-3">📊</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Step 3: Scale Profitably</h3>
+                <p class="text-sm text-gray-600">Optimize margins, increase ad spend, and grow to 6-figures</p>
+              </div>
+            </div>
+
+            <div class="mt-10 bg-gradient-to-r from-pfc-orange to-pfc-purple text-white rounded-2xl p-8 text-center">
+              <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                Ready to Follow This Proven Roadmap?
+              </h3>
+              <p class="text-lg mb-6 text-orange-50">
+                Partner with PFC and get the fulfillment infrastructure you need to scale successfully
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" class="btn bg-white text-pfc-orange hover:bg-gray-100 border-none text-lg px-8 py-4 shadow-xl font-bold">
+                  <i class="fas fa-rocket mr-2"></i>
+                  Start Your Journey
+                </a>
+                <a href="/pricing" class="btn bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border-2 border-white text-lg px-8 py-4 shadow-xl font-bold">
+                  <i class="fas fa-dollar-sign mr-2"></i>
+                  See Pricing
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Top Suppliers & Platforms Integration */}
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
