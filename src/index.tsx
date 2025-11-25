@@ -4,6 +4,7 @@ import { serveStatic } from 'hono/cloudflare-workers'
 import { HomePage } from './pages/home'
 import { ServicesPage } from './pages/services'
 import { EcommerceFulfillmentPage } from './pages/ecommerce-fulfillment'
+import { WarehousingSolutionsPage } from './pages/warehousing-solutions'
 import { SolutionsPage } from './pages/solutions'
 import { AboutPage } from './pages/about'
 import { PricingPage } from './pages/pricing'
@@ -83,6 +84,7 @@ app.post('/api/contact', async (c) => {
 // Page Routes
 app.get('/', (c) => c.html(<HomePage />))
 app.get('/services/ecommerce-fulfillment', (c) => c.html(<EcommerceFulfillmentPage />))
+app.get('/services/warehousing-solutions', (c) => c.html(<WarehousingSolutionsPage />))
 app.get('/services/:service?', (c) => c.html(<ServicesPage service={c.req.param('service')} />))
 app.get('/solutions/:industry?', (c) => c.html(<SolutionsPage industry={c.req.param('industry')} />))
 app.get('/about', (c) => c.html(<AboutPage />))
