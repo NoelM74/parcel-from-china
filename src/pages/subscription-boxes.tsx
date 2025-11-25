@@ -250,6 +250,52 @@ export const SubscriptionBoxesPage = () => {
         </div>
       </section>
 
+      {/* PFC Subscription Box Services Visual */}
+      <section class="py-20 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-3 rounded-full mb-6 font-bold text-sm shadow-lg">
+              📦 COMPLETE FULFILLMENT SOLUTION
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Everything Your Subscription Box Needs
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              From product sourcing to doorstep delivery—we handle every step of your subscription box fulfillment
+            </p>
+          </div>
+          
+          <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-3xl p-6 md:p-10 shadow-2xl border-4 border-transparent hover:border-orange-400 transition-all duration-300">
+              <img 
+                src="https://i.postimg.cc/htWvYkj0/PFC_Subscription_box_services.png" 
+                alt="PFC Subscription Box Fulfillment Services - Complete end-to-end solution including kitting, custom packaging, and recurring shipments"
+                class="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+
+          {/* Key Highlights Below Image */}
+          <div class="grid md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl p-6 shadow-lg text-center border-t-4 border-orange-500">
+              <div class="text-4xl mb-3">🎯</div>
+              <h3 class="font-bold text-lg text-gray-800 mb-2">End-to-End Service</h3>
+              <p class="text-gray-600 text-sm">From receiving inventory to shipping boxes—we manage it all</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg text-center border-t-4 border-purple-500">
+              <div class="text-4xl mb-3">⚡</div>
+              <h3 class="font-bold text-lg text-gray-800 mb-2">Lightning Fast Kitting</h3>
+              <p class="text-gray-600 text-sm">24-hour turnaround from order to shipment</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg text-center border-t-4 border-blue-500">
+              <div class="text-4xl mb-3">🎨</div>
+              <h3 class="font-bold text-lg text-gray-800 mb-2">Premium Branding</h3>
+              <p class="text-gray-600 text-sm">Custom boxes, inserts, and packaging materials</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Solution Overview */}
       <section class="py-20 bg-gradient-to-br from-gray-900 to-pfc-blue text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
