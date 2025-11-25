@@ -82,7 +82,7 @@ const Header = () => (
         {/* Logo */}
         <div class="flex items-center">
           <a href="/" class="flex items-center">
-            <img src="/static/images/pfc-logo-transparent.png" alt="PFC Express - Parcel From China" class="h-10 md:h-12 w-auto" />
+            <img src="/static/images/pfc-logo-white-bg.png" alt="PFC Express - Parcel From China" class="h-10 md:h-12 w-auto" />
           </a>
         </div>
         
