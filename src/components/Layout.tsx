@@ -78,11 +78,11 @@ export const Layout = ({ children, title = 'PFC Logistics - China Ecommerce Fulf
 const Header = () => (
   <header class="sticky-header bg-white shadow-sm">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20">
+      <div class="flex justify-between items-center h-28">
         {/* Logo */}
         <div class="flex items-center">
           <a href="/" class="flex items-center">
-            <img src="/static/images/pfc-logo.png" alt="PFC Express - Royal Logistics Group" class="h-10 md:h-12 w-auto" />
+            <img src="/static/images/pfc-logo.png" alt="PFC Express - Royal Logistics Group" class="h-16 md:h-20 w-auto" />
           </a>
         </div>
         
@@ -181,7 +181,7 @@ const Footer = () => (
         {/* Company Info */}
         <div>
           <div class="mb-4">
-            <img src="/static/images/pfc-logo.png" alt="PFC Express" class="h-12 w-auto brightness-110" />
+            <img src="/static/images/pfc-logo.png" alt="PFC Express" class="h-20 w-auto brightness-110" />
           </div>
           <p class="text-gray-400 text-sm mb-4">
             Leading China-based 3PL fulfillment services with 200,000+ sq.ft warehousing in Shenzhen.
