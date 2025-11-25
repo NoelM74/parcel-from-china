@@ -47,7 +47,9 @@ export const ContactPage = () => {
                 </div>
                 <div>
                   <h3 class="font-bold text-gray-800 mb-1">Headquarters</h3>
-                  <p class="text-gray-600">Shenzhen, Guangdong Province, China</p>
+                  <p class="text-gray-600">PFC Express, 3rd Floor, Building D</p>
+                  <p class="text-gray-600">Minle Industrial Park, Meiban Road</p>
+                  <p class="text-gray-600">Longhua, Shenzhen, China</p>
                 </div>
               </div>
               
@@ -57,7 +59,7 @@ export const ContactPage = () => {
                 </div>
                 <div>
                   <h3 class="font-bold text-gray-800 mb-1">Email</h3>
-                  <a href="mailto:info@parcelfromchina.com" class="text-pfc-blue hover:underline">info@parcelfromchina.com</a>
+                  <a href="mailto:sales@parcelfromchina.com" class="text-pfc-blue hover:underline">sales@parcelfromchina.com</a>
                 </div>
               </div>
               
@@ -66,8 +68,11 @@ export const ContactPage = () => {
                   <i class="fas fa-phone text-pfc-purple text-xl"></i>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-800 mb-1">Phone</h3>
-                  <p class="text-gray-600">+86 XXX XXXX XXXX</p>
+                  <h3 class="font-bold text-gray-800 mb-1">Phone / WhatsApp</h3>
+                  <a href="tel:+8615338777612" class="text-gray-600 hover:text-pfc-purple">+86 15338777612</a>
+                  <a href="https://wa.me/8615338777612" class="block text-green-600 hover:text-green-700 mt-1">
+                    <i class="fab fa-whatsapp mr-1"></i>WhatsApp Chat
+                  </a>
                 </div>
               </div>
               
@@ -86,10 +91,26 @@ export const ContactPage = () => {
             <div class="mt-8 p-6 bg-gradient-to-br from-pfc-orange to-pfc-blue rounded-xl text-white">
               <h3 class="text-xl font-bold mb-2">Need Immediate Assistance?</h3>
               <p class="mb-4">Our team is here to help you 24/7</p>
-              <a href="tel:+86" class="btn bg-white text-pfc-orange hover:bg-gray-100">
+              <a href="tel:+8615338777612" class="btn bg-white text-pfc-orange hover:bg-gray-100 mr-2 mb-2 inline-block">
                 <i class="fas fa-phone mr-2"></i>
                 Call Now
               </a>
+              <a href="https://wa.me/8615338777612" class="btn bg-green-500 text-white hover:bg-green-600 inline-block mb-2">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+            
+            <div class="mt-6 p-6 bg-gray-50 rounded-xl">
+              <h3 class="text-xl font-bold mb-3 text-gray-800">Connect With Us</h3>
+              <div class="flex space-x-4">
+                <a href="https://www.facebook.com/parcelfromchina" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                  <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/pfc-express-logistics" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

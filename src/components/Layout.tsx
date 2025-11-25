@@ -51,14 +51,21 @@ export const Layout = ({ children, title = 'PFC Logistics - China Ecommerce Fulf
             "description": "Leading China-based 3PL fulfillment and logistics services",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Shenzhen",
+              "streetAddress": "3rd Floor, Building D, Minle Industrial Park, Meiban Road",
+              "addressLocality": "Longhua, Shenzhen",
+              "addressRegion": "Guangdong",
               "addressCountry": "CN"
             },
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "Customer Service",
-              "email": "info@parcelfromchina.com"
-            }
+              "telephone": "+86-15338777612",
+              "email": "sales@parcelfromchina.com"
+            },
+            "sameAs": [
+              "https://www.facebook.com/parcelfromchina",
+              "https://www.linkedin.com/company/pfc-express-logistics"
+            ]
           })
         }}></script>
       </head>
@@ -187,10 +194,9 @@ const Footer = () => (
             Leading China-based 3PL fulfillment services with 200,000+ sq.ft warehousing in Shenzhen.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-pfc-orange transition"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-gray-400 hover:text-pfc-orange transition"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-gray-400 hover:text-pfc-orange transition"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="text-gray-400 hover:text-pfc-orange transition"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/parcelfromchina" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pfc-orange transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/pfc-express-logistics" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pfc-orange transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/8615338777612" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-green-500 transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
         
@@ -224,15 +230,23 @@ const Footer = () => (
           <ul class="space-y-3 text-sm text-gray-400">
             <li class="flex items-start">
               <i class="fas fa-map-marker-alt mt-1 mr-3 text-pfc-orange"></i>
-              <span>Shenzhen, Guangdong, China</span>
+              <div>
+                <div>PFC Express, 3rd Floor, Building D</div>
+                <div>Minle Industrial Park, Meiban Road</div>
+                <div>Longhua, Shenzhen, China</div>
+              </div>
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope mr-3 text-pfc-orange"></i>
-              <a href="mailto:info@parcelfromchina.com" class="hover:text-pfc-orange transition">info@parcelfromchina.com</a>
+              <a href="mailto:sales@parcelfromchina.com" class="hover:text-pfc-orange transition">sales@parcelfromchina.com</a>
             </li>
             <li class="flex items-center">
               <i class="fas fa-phone mr-3 text-pfc-orange"></i>
-              <a href="tel:+86" class="hover:text-pfc-orange transition">+86 XXX XXXX XXXX</a>
+              <a href="tel:+8615338777612" class="hover:text-pfc-orange transition">+86 15338777612</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fab fa-whatsapp mr-3 text-green-500"></i>
+              <a href="https://wa.me/8615338777612" class="hover:text-green-400 transition">WhatsApp Chat</a>
             </li>
           </ul>
         </div>
