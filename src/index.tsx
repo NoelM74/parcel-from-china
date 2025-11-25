@@ -18,6 +18,8 @@ import { OnlineRetailersPage } from './pages/online-retailers'
 import { CrowdfundingPage } from './pages/crowdfunding'
 import { DropshippingPage } from './pages/dropshipping'
 import { AmazonFBASellersPage } from './pages/amazon-fba-sellers'
+import { PrivacyPolicyPage } from './pages/privacy-policy'
+import { TermsOfServicePage } from './pages/terms-of-service'
 
 type Bindings = {
   RESEND_API_KEY: string
@@ -341,5 +343,7 @@ app.get('/about', (c) => c.html(<AboutPage />))
 app.get('/pricing', (c) => c.html(<PricingPage />))
 app.get('/contact', (c) => c.html(<ContactPage />))
 app.get('/faq', (c) => c.html(<FaqPage />))
+app.get('/privacy-policy', (c) => c.html(<PrivacyPolicyPage />))
+app.get('/terms-of-service', (c) => c.html(<TermsOfServicePage />))
 
 export default app
