@@ -775,7 +775,7 @@ export const TermsOfServicePage = () => {
                   <i class="fas fa-comments text-blue-500"></i>
                   Informal Resolution
                 </h3>
-                <p class="text-gray-700">Before pursuing formal dispute resolution, we encourage you to contact us directly to resolve any issues. Most disputes can be resolved through good-faith communication. Please email <a href="mailto:disputes@pfclogistics.com" class="text-pfc-purple hover:text-pfc-orange underline">disputes@pfclogistics.com</a> with details of your concern.</p>
+                <p class="text-gray-700">Before pursuing formal dispute resolution, we encourage you to contact us directly to resolve any issues. Most disputes can be resolved through good-faith communication. Please email <a href="mailto:sales@parcelfromchina.com" class="text-pfc-purple hover:text-pfc-orange underline">sales@parcelfromchina.com</a> with details of your concern.</p>
               </div>
 
               <div class="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-6">
@@ -877,7 +877,7 @@ export const TermsOfServicePage = () => {
                   <i class="fas fa-envelope text-3xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-2">Email</h3>
-                <a href="mailto:legal@pfclogistics.com" class="text-white/90 hover:text-white">legal@pfclogistics.com</a>
+                <a href="mailto:sales@parcelfromchina.com" class="text-white/90 hover:text-white">sales@parcelfromchina.com</a>
               </div>
 
               <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
@@ -885,7 +885,7 @@ export const TermsOfServicePage = () => {
                   <i class="fas fa-phone text-3xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-2">Phone</h3>
-                <a href="tel:+1234567890" class="text-white/90 hover:text-white">+1 (234) 567-890</a>
+                <a href="tel:+8615338777612" class="text-white/90 hover:text-white">+86 15338777612</a>
               </div>
 
               <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
@@ -893,7 +893,7 @@ export const TermsOfServicePage = () => {
                   <i class="fas fa-map-marker-alt text-3xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-2">Address</h3>
-                <p class="text-white/90">123 Logistics Way<br/>Commerce City, ST 12345</p>
+                <p class="text-white/90">PFC Express, 3rd Floor, Building D<br/>Minle Industrial Park, Meiban Road<br/>Longhua, Shenzhen, China</p>
               </div>
             </div>
 

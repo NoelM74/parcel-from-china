@@ -448,7 +448,7 @@ export const PrivacyPolicyPage = () => {
                 </h3>
                 <p class="text-gray-700 mb-3">To exercise any of these rights, please contact us at:</p>
                 <div class="bg-white rounded-lg p-4">
-                  <p class="text-gray-800"><strong>Email:</strong> <a href="mailto:privacy@pfclogistics.com" class="text-pfc-purple hover:text-pfc-orange">privacy@pfclogistics.com</a></p>
+                  <p class="text-gray-800"><strong>Email:</strong> <a href="mailto:sales@parcelfromchina.com" class="text-pfc-purple hover:text-pfc-orange">sales@parcelfromchina.com</a></p>
                   <p class="text-gray-800 mt-2"><strong>Subject Line:</strong> "Privacy Rights Request"</p>
                   <p class="text-gray-700 text-sm mt-3">We will respond to your request within 30 days. We may need to verify your identity before processing your request.</p>
                 </div>
@@ -587,21 +587,21 @@ export const PrivacyPolicyPage = () => {
                         <i class="fas fa-envelope text-pfc-purple mt-1"></i>
                         <div>
                           <p class="text-gray-700 font-semibold">Email</p>
-                          <a href="mailto:privacy@pfclogistics.com" class="text-pfc-purple hover:text-pfc-orange">privacy@pfclogistics.com</a>
+                          <a href="mailto:sales@parcelfromchina.com" class="text-pfc-purple hover:text-pfc-orange">sales@parcelfromchina.com</a>
                         </div>
                       </div>
                       <div class="flex items-start gap-3">
                         <i class="fas fa-phone text-pfc-purple mt-1"></i>
                         <div>
                           <p class="text-gray-700 font-semibold">Phone</p>
-                          <a href="tel:+1234567890" class="text-pfc-purple hover:text-pfc-orange">+1 (234) 567-890</a>
+                          <a href="tel:+8615338777612" class="text-pfc-purple hover:text-pfc-orange">+86 15338777612</a>
                         </div>
                       </div>
                       <div class="flex items-start gap-3">
                         <i class="fas fa-map-marker-alt text-pfc-purple mt-1"></i>
                         <div>
                           <p class="text-gray-700 font-semibold">Address</p>
-                          <p class="text-gray-700">123 Logistics Way<br/>Commerce City, ST 12345<br/>United States</p>
+                          <p class="text-gray-700">PFC Express, 3rd Floor, Building D<br/>Minle Industrial Park, Meiban Road<br/>Longhua, Shenzhen, China</p>
                         </div>
                       </div>
                     </div>
@@ -666,7 +666,7 @@ export const PrivacyPolicyPage = () => {
               We're committed to protecting your data and maintaining your trust. If you have any questions or concerns, we're here to help.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:privacy@pfclogistics.com" class="bg-white text-pfc-purple hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl flex items-center justify-center gap-2">
+              <a href="mailto:sales@parcelfromchina.com" class="bg-white text-pfc-purple hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl flex items-center justify-center gap-2">
                 <i class="fas fa-envelope"></i>
                 Contact Privacy Team
               </a>
