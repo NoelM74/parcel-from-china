@@ -214,9 +214,14 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
                       <p class="text-gray-700 leading-relaxed mb-4">
                         {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
                       </p>
-                      <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
-                        Learn more about our team <i class="fas fa-arrow-right text-sm"></i>
-                      </a>
+                      <div class="flex flex-wrap gap-4">
+                        <a href="https://www.linkedin.com/in/noel-murphy-ecommerce-china" target="_blank" rel="noopener noreferrer" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
+                          <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                        <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
+                          Learn more about our team <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
