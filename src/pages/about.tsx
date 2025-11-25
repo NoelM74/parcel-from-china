@@ -417,8 +417,8 @@ export const AboutPage = () => {
               
               <div class="relative h-full min-h-[400px] md:min-h-[500px]">
                 <img 
-                  src="/static/images/founders-noel-oakes.jpg"
-                  alt="PFC Founders - Award-winning leadership in logistics innovation"
+                  src="https://i.postimg.cc/6qj18TfQ/Photo_of_Ouyang_Ke_PFC_C0-Founder.jpg"
+                  alt="Ouyang Ke (Oakes) - Co-Founder & CEO of PFC Logistics"
                   class="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                   width="800"
