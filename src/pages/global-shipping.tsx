@@ -10,7 +10,7 @@ export const GlobalShippingPage = () => {
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="max-w-4xl">
             <div class="inline-block bg-pfc-orange/20 border border-pfc-orange/40 rounded-full px-4 py-2 mb-6">
-              <span class="text-sm font-semibold text-orange-300">🌍 40+ Countries • 30+ Carriers</span>
+              <span class="text-sm font-semibold text-orange-300">🌍 200+ Countries • 40+ Carriers</span>
             </div>
             
             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
@@ -42,7 +42,7 @@ export const GlobalShippingPage = () => {
                 <p class="text-sm text-gray-300">Countries Covered</p>
               </div>
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 text-center">
-                <div class="text-3xl font-bold mb-1">30+</div>
+                <div class="text-3xl font-bold mb-1">40+</div>
                 <p class="text-sm text-gray-300">Carrier Partners</p>
               </div>
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 text-center">
@@ -616,15 +616,15 @@ export const GlobalShippingPage = () => {
                     <div class="space-y-3 mb-6">
                       <div class="bg-purple-50 border-l-4 border-pfc-purple pl-4 py-2 rounded-r">
                         <p class="font-semibold text-gray-800">🇺🇸 USA Special Line</p>
-                        <p class="text-sm text-gray-600">Direct consolidation to US cities • 8-12 days</p>
+                        <p class="text-sm text-gray-600">Direct consolidation to US cities • from 8 days</p>
                       </div>
                       <div class="bg-purple-50 border-l-4 border-pfc-purple pl-4 py-2 rounded-r">
                         <p class="font-semibold text-gray-800">🇪🇺 Europe Special Line</p>
-                        <p class="text-sm text-gray-600">Germany, UK, France, Italy • 10-14 days</p>
+                        <p class="text-sm text-gray-600">Germany, UK, France, Italy • from 8 days</p>
                       </div>
                       <div class="bg-purple-50 border-l-4 border-pfc-purple pl-4 py-2 rounded-r">
                         <p class="font-semibold text-gray-800">🇬🇧 UK Special Line</p>
-                        <p class="text-sm text-gray-600">Direct flights to London • 7-10 days</p>
+                        <p class="text-sm text-gray-600">Direct flights to London • from 6 days</p>
                       </div>
                       <div class="bg-purple-50 border-l-4 border-pfc-purple pl-4 py-2 rounded-r">
                         <p class="font-semibold text-gray-800">🕌 Middle East Special Line</p>
