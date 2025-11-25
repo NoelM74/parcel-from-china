@@ -345,6 +345,41 @@ function openQuoteForm() {
   window.location.href = '/contact#quote';
 }
 
+// Shipping Method Tabs (for Global Shipping page)
+function initShippingTabs() {
+  const tabs = document.querySelectorAll('.shipping-tab');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  if (tabs.length === 0) return;
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.getAttribute('data-tab');
+      
+      // Remove active class from all tabs
+      tabs.forEach(t => {
+        t.classList.remove('active', 'bg-pfc-orange', 'text-white');
+        t.classList.add('bg-white', 'text-gray-700');
+      });
+      
+      // Add active class to clicked tab
+      tab.classList.add('active', 'bg-pfc-orange', 'text-white');
+      tab.classList.remove('bg-white', 'text-gray-700');
+      
+      // Hide all tab contents
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Show target tab content
+      const targetContent = document.getElementById(`${targetTab}-tab`);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+}
+
 // Initialize all features when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
@@ -356,6 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQSearch();
   initLazyLoad();
   initStickyHeader();
+  initShippingTabs();
 });
 
 // Export functions for global access
