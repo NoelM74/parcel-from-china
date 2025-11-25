@@ -226,28 +226,26 @@ function initQuoteForm() {
 
 // FAQ Accordion
 function initFAQAccordion() {
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqQuestions = document.querySelectorAll('.faq-question');
   
-  faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    const answer = item.querySelector('.faq-answer');
-    const icon = item.querySelector('.faq-icon');
-    
-    if (question && answer) {
-      question.addEventListener('click', () => {
-        const isOpen = !answer.classList.contains('hidden');
-        
-        // Close all other FAQs
-        document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
-        document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
-        
-        // Toggle current FAQ
-        if (!isOpen) {
-          answer.classList.remove('hidden');
-          if (icon) icon.style.transform = 'rotate(180deg)';
-        }
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector('i.fa-chevron-down');
+      const isOpen = !answer.classList.contains('hidden');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+      document.querySelectorAll('.faq-question i.fa-chevron-down').forEach(i => {
+        i.style.transform = 'rotate(0deg)';
       });
-    }
+      
+      // Toggle current FAQ
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    });
   });
 }
 
