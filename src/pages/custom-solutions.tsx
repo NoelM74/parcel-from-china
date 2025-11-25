@@ -238,6 +238,30 @@ export const CustomSolutionsPage = () => {
               </div>
             </div>
           </div>
+
+          {/* Kitting Process Infographic */}
+          <div class="mt-16">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Complete Kitting Process Visualized
+              </h3>
+              <p class="text-lg text-gray-600">
+                See exactly how we transform your components into ready-to-ship kits
+              </p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-blue-200">
+                <img 
+                  src="/static/images/kitting-service-infographic.png" 
+                  alt="PFC Product Kitting Service Process - Complete workflow from receiving to shipping"
+                  class="w-full h-auto rounded-xl shadow-lg"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -356,6 +380,30 @@ export const CustomSolutionsPage = () => {
                   <i class="fas fa-undo mr-2"></i>
                   Setup Return Logistics
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Return Logistics Infographic */}
+          <div class="mt-16">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Complete Return Management Workflow
+              </h3>
+              <p class="text-lg text-gray-600">
+                From customer return to restocking - see how we handle every step
+              </p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-green-200">
+                <img 
+                  src="/static/images/return-order-management.png" 
+                  alt="PFC Return Order Management Process - Comprehensive reverse logistics workflow"
+                  class="w-full h-auto rounded-xl shadow-lg"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
               </div>
             </div>
           </div>
@@ -505,6 +553,30 @@ export const CustomSolutionsPage = () => {
                 Request Packaging Quote
               </a>
               <p class="text-sm text-gray-500 mt-4">Design support available • No setup fees for standard sizes</p>
+            </div>
+          </div>
+
+          {/* Custom Packaging Showcase */}
+          <div class="mt-16">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Transform Your Brand with Custom Packaging
+              </h3>
+              <p class="text-lg text-gray-600">
+                See how professional branded packaging elevates your customer experience
+              </p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-purple-200">
+                <img 
+                  src="/static/images/custom-branded-packaging.png" 
+                  alt="Custom Branded Packaging Examples - Stand out with professional packaging design"
+                  class="w-full h-auto rounded-xl shadow-lg"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -706,6 +778,30 @@ export const CustomSolutionsPage = () => {
                 Setup COD Service
               </a>
               <p class="text-sm text-orange-100 mt-4">Contact sales for fee structure based on your volume and return cycle</p>
+            </div>
+          </div>
+
+          {/* COD Service Infographic */}
+          <div class="mt-16">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Cash on Delivery Service Explained
+              </h3>
+              <p class="text-lg text-gray-600">
+                See how our COD service works from order to payment remittance
+              </p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-200">
+                <img 
+                  src="/static/images/cod-services.png" 
+                  alt="PFC Cash on Delivery Services - Complete COD workflow and coverage"
+                  class="w-full h-auto rounded-xl shadow-lg"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </div>
             </div>
           </div>
         </div>
