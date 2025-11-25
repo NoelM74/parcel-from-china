@@ -448,7 +448,7 @@ export const HomePage = () => {
           </div>
           
           <div class="mb-12 rounded-2xl overflow-hidden shadow-2xl">
-            <img src="https://www.genspark.ai/api/files/s/eHhZAWMy" 
+            <img src="/static/images/team-photo.jpg" 
                  alt="PFC Logistics Team - Your dedicated fulfillment experts" 
                  class="w-full h-auto" />
           </div>
@@ -479,13 +479,13 @@ export const HomePage = () => {
           
           <div class="grid md:grid-cols-2 gap-8 mb-12">
             <div class="rounded-2xl overflow-hidden shadow-xl">
-              <img src="https://www.genspark.ai/api/files/s/chwMXLaD" 
+              <img src="/static/images/warehouse-automation.jpg" 
                    alt="Advanced warehouse automation with conveyor systems" 
                    class="w-full h-96 object-cover" />
             </div>
             <div class="rounded-2xl overflow-hidden shadow-xl">
-              <img src="https://www.genspark.ai/api/files/s/KjOSsgTJ" 
-                   alt="Organized warehouse with modern inventory management" 
+              <img src="/static/images/containers-sunset.png" 
+                   alt="Containers being loaded at sunset - Global shipping operations" 
                    class="w-full h-96 object-cover" />
             </div>
           </div>
