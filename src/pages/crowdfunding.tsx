@@ -158,7 +158,7 @@ export const CrowdfundingPage = () => {
             </p>
           </div>
 
-          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-12 border border-white/20">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-12 border border-white/20 mb-12">
             <div class="grid md:grid-cols-3 gap-8">
               <div class="text-center">
                 <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
@@ -190,6 +190,18 @@ export const CrowdfundingPage = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Crowdfunding Fulfillment Infographic */}
+          <div class="bg-white rounded-2xl p-8 shadow-2xl">
+            <img 
+              src="https://i.postimg.cc/nVXBq17s/crowdfunding-fulfillment.png" 
+              alt="PFC Express Crowdfunding Fulfillment Process - Turn Your Idea Into Reality with Kickstarter, Indiegogo & Global Logistics Partners" 
+              class="w-full h-auto rounded-lg"
+              loading="lazy"
+              width="1200"
+              height="675"
+            />
           </div>
         </div>
       </section>
