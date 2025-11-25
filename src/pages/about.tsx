@@ -286,7 +286,7 @@ export const AboutPage = () => {
               <p class="text-lg font-semibold">Countries Served</p>
             </div>
             <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div class="text-5xl md:text-6xl font-bold mb-2">100K+</div>
+              <div class="text-5xl md:text-6xl font-bold mb-2">300K+</div>
               <p class="text-lg font-semibold">Parcels/Month</p>
             </div>
             <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">

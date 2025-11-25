@@ -503,7 +503,7 @@ export const OnlineRetailersPage = () => {
               <p class="text-orange-100">Online Stores Served</p>
             </div>
             <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div class="text-5xl font-bold mb-2">100K+</div>
+              <div class="text-5xl font-bold mb-2">300K+</div>
               <p class="text-orange-100">Orders Fulfilled Monthly</p>
             </div>
             <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
