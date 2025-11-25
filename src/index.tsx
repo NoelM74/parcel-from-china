@@ -7,6 +7,7 @@ import { EcommerceFulfillmentPage } from './pages/ecommerce-fulfillment'
 import { WarehousingSolutionsPage } from './pages/warehousing-solutions'
 import { GlobalShippingPage } from './pages/global-shipping'
 import { AmazonFBAPrepPage } from './pages/amazon-fba-prep'
+import { CustomSolutionsPage } from './pages/custom-solutions'
 import { SolutionsPage } from './pages/solutions'
 import { AboutPage } from './pages/about'
 import { PricingPage } from './pages/pricing'
@@ -89,6 +90,7 @@ app.get('/services/ecommerce-fulfillment', (c) => c.html(<EcommerceFulfillmentPa
 app.get('/services/warehousing-solutions', (c) => c.html(<WarehousingSolutionsPage />))
 app.get('/services/global-shipping', (c) => c.html(<GlobalShippingPage />))
 app.get('/services/amazon-fba-prep', (c) => c.html(<AmazonFBAPrepPage />))
+app.get('/services/custom-solutions', (c) => c.html(<CustomSolutionsPage />))
 app.get('/services/:service?', (c) => c.html(<ServicesPage service={c.req.param('service')} />))
 app.get('/solutions/:industry?', (c) => c.html(<SolutionsPage industry={c.req.param('industry')} />))
 app.get('/about', (c) => c.html(<AboutPage />))
