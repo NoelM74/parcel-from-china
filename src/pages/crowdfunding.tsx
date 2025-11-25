@@ -636,22 +636,30 @@ export const CrowdfundingPage = () => {
 
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-2xl transition">
-              <div class="text-5xl mb-4">🚀</div>
+              <div class="h-16 flex items-center justify-center mb-4">
+                <img src="https://i.postimg.cc/ZRZK74ss/KICKSTARTER-LOGO.png" alt="Kickstarter" class="h-12 w-auto object-contain" loading="lazy" />
+              </div>
               <h3 class="font-bold text-gray-800">Kickstarter</h3>
               <p class="text-sm text-gray-600 mt-2">CSV export support</p>
             </div>
             <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-2xl transition">
-              <div class="text-5xl mb-4">💡</div>
+              <div class="h-16 flex items-center justify-center mb-4">
+                <img src="https://i.postimg.cc/85DPKNX0/indiegogo-logo.png" alt="Indiegogo" class="h-12 w-auto object-contain" loading="lazy" />
+              </div>
               <h3 class="font-bold text-gray-800">Indiegogo</h3>
               <p class="text-sm text-gray-600 mt-2">Backer data import</p>
             </div>
             <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-2xl transition">
-              <div class="text-5xl mb-4">📦</div>
+              <div class="h-16 flex items-center justify-center mb-4">
+                <img src="https://i.postimg.cc/qR0Mb4Dm/BACKERKITLOGO.png" alt="BackerKit" class="h-12 w-auto object-contain" loading="lazy" />
+              </div>
               <h3 class="font-bold text-gray-800">BackerKit</h3>
               <p class="text-sm text-gray-600 mt-2">Survey integration</p>
             </div>
             <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-2xl transition">
-              <div class="text-5xl mb-4">🎯</div>
+              <div class="h-16 flex items-center justify-center mb-4">
+                <i class="fas fa-file-csv text-5xl text-pfc-blue"></i>
+              </div>
               <h3 class="font-bold text-gray-800">Custom CSV</h3>
               <p class="text-sm text-gray-600 mt-2">Any platform format</p>
             </div>
