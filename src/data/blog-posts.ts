@@ -1314,6 +1314,374 @@ export const blogPosts: BlogPost[] = [
   </ul>
 </div>
 `
+  },
+  {
+    slug: 'china-shipping-restrictions-2025',
+    title: 'China Shipping Restrictions 2025: The Definitive "Can I Ship This?" Guide',
+    excerpt: 'Navigate China\'s complex shipping restrictions with this comprehensive 2025 guide. Learn what\'s banned, what\'s grey area, and how to stay compliant with US CBP, EU ICS2, and UK customs regulations.',
+    author: 'Noel Murphy',
+    authorRole: 'Logistics Expert & Ecommerce Consultant',
+    authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
+    date: '2025-01-25',
+    category: 'Customs & Compliance',
+    tags: ['shipping restrictions', 'customs compliance', 'china shipping', 'batteries', 'dangerous goods', 'cbp regulations'],
+    readTime: '16 min read',
+    image: 'https://i.postimg.cc/qq55vfqY/China-Shipping-Restrictions.png',
+    featured: true,
+    relatedPosts: ['china-post-vs-ems-vs-dhl-shipping-comparison', 'amazon-fba-prep-requirements-checklist-2025', 'dropshipping-fulfillment-china'],
+    faqSchema: [
+      {
+        question: "Can I ship branded items (Nike, Disney) if they are real?",
+        answer: "Technically yes if you have proper authorisation from the brand owner (proof of purchase from authorised distributor, reseller agreement, etc.). However, customs officers are extremely sceptical of branded goods from China. Even genuine branded products can get detained for 30+ days whilst customs investigates. Unless you have rock-solid documentation (invoices from Nike corporate, authorised distributor paperwork), I'd avoid shipping branded items entirely. The hassle isn't worth it."
+      },
+      {
+        question: "What is the best way to ship e-cigarettes and vaping products?",
+        answer: "E-cigarettes and vaping liquids are subject to complex regulations that vary by destination. In the US, the FDA regulates these as tobacco products, and many states ban their shipment entirely. The UK and EU require compliance with TPD regulations and tax stamps. For lithium batteries in vapes, you must follow IATA DGR 66 (UN3481) with proper packaging and documentation. Best approach: Use a specialist freight forwarder who handles dangerous goods and has customs broker relationships. We handle this for clients but it requires proper paperwork and DHL/FedEx (never postal services)."
+      },
+      {
+        question: "Do I need to pay for fumigation on wooden toys?",
+        answer: "Depends on the wood treatment. If wooden toys are made from manufactured wood products (plywood, MDF, particle board), fumigation is NOT required. If they're made from raw/solid wood, you need ISPM-15 certification proving heat treatment or methyl bromide fumigation. Australia is strictest about this—untreated wood can result in shipment destruction. Ask your supplier for IPPC stamps on wooden items or request heat-treated certification. Fumigation costs £150-300 per container if needed, but it's worth it to avoid biosecurity violations."
+      },
+      {
+        question: "My supplier says they can ship anything. Should I trust them?",
+        answer: "Absolutely not. I've seen this backfire hundreds of times. Chinese suppliers often say 'yes, we can ship anything' because they don't understand destination country regulations—or worse, they know the shipment will clear Chinese customs but don't care if it gets seized at US/UK/EU customs. The financial risk falls entirely on you, not the supplier. Common lies: 'We can ship lithium batteries by air' (only if IATA compliant), 'No problem shipping branded goods' (trademark violations), 'Liquid supplements are fine' (FDA registration required). Always verify restrictions independently through a freight forwarder or customs broker."
+      },
+      {
+        question: "What happens if customs seizes my shipment due to restricted items?",
+        answer: "Customs seizure is a nightmare scenario with severe consequences. Your shipment will be held indefinitely (30-90 days typical), you'll receive a customs notice requiring detailed documentation, and you have limited time to respond (usually 30 days). If you can't prove compliance, the goods are destroyed—no refund, no return. You may also face fines (£500-5,000 depending on violation severity) and future shipments face increased scrutiny. Worst case: Criminal charges for smuggling if customs believes it was intentional (counterfeit goods, drug-related items). Prevention is infinitely better than dealing with seizures."
+      },
+      {
+        question: "How do I get IATA DGR 66 compliance for shipping lithium batteries?",
+        answer: "IATA DGR 66 (Dangerous Goods Regulations, 66th Edition) compliance requires: 1) UN38.3 test certification from battery manufacturer, 2) Proper classification (UN3481 for batteries contained in equipment), 3) Correct packaging (must meet Section II requirements—individual protection, non-conductive materials), 4) Clear labeling (lithium battery handling label, cargo aircraft only if over limits), 5) Shipper's Declaration for Dangerous Goods form. Most ecommerce sellers can't handle this themselves—use a freight forwarder with IATA DG certification. We handle this for clients shipping battery products globally. Cost: £50-100 documentation fee per shipment plus compliant packaging."
+      }
+    ],
+    content: `
+<p class="text-xl text-gray-700 mb-6 leading-relaxed">I've been shipping products out of China for over a decade, and I'll tell you straight: the question "Can I ship this from China?" is one I hear at least three times a day. And honestly? The answer changes constantly. What was perfectly fine to ship last quarter might now be sitting in customs detention, costing you thousands in storage fees whilst you scramble for paperwork.</p>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">Here's the truth—shipping restrictions from China in 2025 are the most complex they've ever been. Between US CBP's Type 86 crackdown, the EU's ICS2 Release 3 rollout, and China's own export controls tightening, there's a minefield of regulations that can turn profitable shipments into expensive disasters. Let me walk you through exactly what you can and absolutely cannot ship, based on real-world experience from our Shenzhen facility processing thousands of shipments monthly.</p>
+
+<div class="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 rounded-2xl p-8 mb-10 border-2 border-red-300">
+  <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+    <span class="text-4xl">⚠️</span>
+    Quick Summary: The "Kill List" – High-Risk Items
+  </h3>
+  <p class="text-lg text-gray-700 mb-4">Before we dive deep, here are the items most likely to get your shipment seized, detained, or rejected outright:</p>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="bg-white rounded-xl p-4 border-l-4 border-red-500">
+      <h4 class="font-bold text-red-800 mb-2">🚫 Universally Banned</h4>
+      <ul class="text-gray-700 space-y-1 text-sm">
+        <li>• Counterfeit/branded goods</li>
+        <li>• Flammable liquids (alcohol >24%)</li>
+        <li>• Weapons & weapon parts</li>
+        <li>• Ivory & endangered species</li>
+        <li>• Narcotics & drug precursors</li>
+      </ul>
+    </div>
+    <div class="bg-white rounded-xl p-4 border-l-4 border-orange-500">
+      <h4 class="font-bold text-orange-800 mb-2">⚠️ High-Risk "Grey Area"</h4>
+      <ul class="text-gray-700 space-y-1 text-sm">
+        <li>• Lithium batteries (need IATA DGR 66)</li>
+        <li>• Liquids >100ml</li>
+        <li>• Powders (white powders = instant flag)</li>
+        <li>• Magnets (strong rare-earth types)</li>
+        <li>• E-cigarettes & vaping products</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Section 1: The "Hard No" List – Universal Bans</h2>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">These items are banned by international conventions, Chinese export laws, or destination country import regulations. Attempting to ship them will result in immediate seizure, potential legal action, and possible criminal charges:</p>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">1.1 Dangerous Goods (IATA Class 1-9)</h3>
+
+<div class="bg-red-50 border-2 border-red-300 rounded-xl p-6 mb-6">
+  <p class="font-bold text-red-800 mb-4">🔥 Flammable & Explosive Materials:</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>Aerosols:</strong> Spray paints, compressed air, deodorants (butane propellant)</li>
+    <li>• <strong>Flammable liquids:</strong> Perfumes with >24% alcohol, nail polish remover (acetone), lighter fluid</li>
+    <li>• <strong>Explosives:</strong> Fireworks, ammunition, gunpowder, flares</li>
+    <li>• <strong>Oxidising agents:</strong> Hydrogen peroxide >3%, bleach concentrates</li>
+  </ul>
+  <p class="text-gray-700 mt-4"><strong>Why it matters:</strong> These violate IATA Dangerous Goods Regulations. Airlines refuse them, and attempting to misdeclare them is a criminal offence.</p>
+</div>
+
+<div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-8">
+  <img src="https://i.postimg.cc/4x2wPMfn/Banned-Items-flammables-counterfiets.jpg" alt="Banned flammable items and counterfeit goods" class="w-full rounded-lg mb-4">
+  <p class="text-sm text-gray-600 italic text-center">Common banned items: flammables, counterfeits, and dangerous goods</p>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">1.2 Counterfeit & Intellectual Property Violations</h3>
+
+<div class="bg-orange-50 border-2 border-orange-300 rounded-xl p-6 mb-6">
+  <p class="font-bold text-orange-800 mb-4">🚨 Trademark & Copyright Infringements:</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>Fake branded goods:</strong> "Nike" shoes without authorisation, "Louis Vuitton" bags, "Disney" toys</li>
+    <li>• <strong>Pirated media:</strong> Copied software, pirated movies/music, bootleg books</li>
+    <li>• <strong>Patent violations:</strong> Products copying patented designs without licensing</li>
+    <li>• <strong>Logo misuse:</strong> Using brand logos on unauthorised merchandise</li>
+  </ul>
+  <p class="text-gray-700 mt-4"><strong>Real example:</strong> US CBP seized $1.3 billion in counterfeit goods in 2024, with China accounting for 76% of seizures. Even if you didn't know they were fake, YOU are liable for the violation.</p>
+</div>
+
+<div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-8 rounded-r-lg">
+  <p class="font-bold text-gray-800 mb-2">💡 Grey Area: Genuine Branded Goods</p>
+  <p class="text-gray-700">Even <em>real</em> branded products can trigger customs issues if you lack proof of authorisation. If you're dropshipping genuine Nike shoes, customs may still seize them assuming they're counterfeit unless you have purchase invoices from authorised distributors. This is why <a href="/solutions/dropshipping" class="text-pfc-purple hover:text-pfc-orange underline">reputable dropshipping fulfilment centres</a> avoid branded goods entirely—the risk isn't worth it.</p>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">1.3 Legally Restricted Items</h3>
+
+<div class="bg-red-50 rounded-xl p-6 mb-8">
+  <p class="font-bold text-red-800 mb-4">⚖️ Items Banned by International Law:</p>
+  <ul class="space-y-3 text-gray-700">
+    <li>• <strong>Weapons & parts:</strong> Guns, knives (over legal blade length), brass knuckles, tasers</li>
+    <li>• <strong>Narcotics & precursors:</strong> Any controlled substances, chemicals used in drug manufacturing</li>
+    <li>• <strong>Endangered species products:</strong> Ivory, tortoiseshell, certain animal furs (CITES violations)</li>
+    <li>• <strong>Radioactive materials:</strong> Even low-level radioactive items like vintage watch dials</li>
+    <li>• <strong>Biological agents:</strong> Viruses, bacteria, toxins, medical waste</li>
+  </ul>
+</div>
+
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Section 2: The "Grey Area" – Items That Need Special Handling</h2>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">These items aren't universally banned, but they require specific documentation, packaging, or carrier approval. Shipping them incorrectly causes delays, additional fees, or rejection:</p>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">2.1 Lithium Batteries – The IATA DGR 66 Challenge</h3>
+
+<p class="text-lg text-gray-700 mb-4">Lithium batteries are the #1 compliance issue I see with ecommerce sellers. Since the <strong>IATA DGR 66th Edition</strong> (2025 regulations), requirements have tightened significantly:</p>
+
+<div class="bg-blue-50 border-2 border-blue-300 rounded-xl p-6 mb-6">
+  <h4 class="font-bold text-blue-800 mb-3">✅ What's Required for Shipping Lithium Batteries:</h4>
+  <ol class="space-y-3 text-gray-700">
+    <li><strong>1. UN38.3 Test Certification:</strong> Battery must pass UN safety testing (drop test, thermal test, vibration test). Your supplier should provide this—if they can't, don't ship it.</li>
+    <li><strong>2. Correct Classification:</strong>
+      <ul class="ml-6 mt-2 space-y-1">
+        <li>• <strong>UN3481:</strong> Lithium-ion batteries contained in equipment (phones, laptops)</li>
+        <li>• <strong>UN3480:</strong> Standalone lithium-ion batteries</li>
+        <li>• Separate rules for lithium metal batteries (UN3090/UN3091)</li>
+      </ul>
+    </li>
+    <li><strong>3. Proper Packaging (Section II requirements):</strong>
+      <ul class="ml-6 mt-2 space-y-1">
+        <li>• Individual protection for each battery (blister pack, plastic sleeve)</li>
+        <li>• Non-conductive materials between batteries</li>
+        <li>• Maximum package limit: 5kg net battery weight for air shipping</li>
+      </ul>
+    </li>
+    <li><strong>4. Correct Labeling:</strong> Lithium battery handling label (black/white diamond) must be affixed to outer package</li>
+    <li><strong>5. Documentation:</strong> Shipper's Declaration for Dangerous Goods (if required by carrier)</li>
+  </ol>
+</div>
+
+<div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-8">
+  <img src="https://i.postimg.cc/3xf9168d/correct-un3481-packaging-label.jpg" alt="Correct UN3481 lithium battery packaging and labeling" class="w-full rounded-lg mb-4">
+  <p class="text-sm text-gray-600 italic text-center">Proper UN3481 lithium battery packaging with required labels</p>
+</div>
+
+<div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-8 rounded-r-lg">
+  <p class="font-bold text-gray-800 mb-2">⚠️ Common Mistake:</p>
+  <p class="text-gray-700">Sellers often ship battery-powered devices (wireless headphones, portable chargers, electric toothbrushes) without IATA compliance. Even if the battery is "built-in," it still requires proper documentation and labeling. China Post and EMS frequently reject these shipments—use <a href="/services/global-shipping" class="text-pfc-purple hover:text-pfc-orange underline">DHL or FedEx with dangerous goods handling</a> instead.</p>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">2.2 Liquids – Volume & Content Restrictions</h3>
+
+<div class="bg-purple-50 rounded-xl p-6 mb-6">
+  <p class="font-bold text-purple-800 mb-4">💧 Liquid Shipping Rules (2025):</p>
+  <ul class="space-y-3 text-gray-700">
+    <li>• <strong>Under 100ml:</strong> Generally acceptable for most carriers (perfume samples, essential oils)</li>
+    <li>• <strong>100ml - 500ml:</strong> Requires special packaging (leak-proof containers, absorbent material) and may be refused by air carriers</li>
+    <li>• <strong>Over 500ml:</strong> Must ship via sea freight or ground transport—air carriers refuse them</li>
+    <li>• <strong>Alcohol content >24%:</strong> Flammable liquid classification (requires DG documentation)</li>
+    <li>• <strong>Cosmetics & supplements:</strong> US FDA registration required, EU CLP labeling required</li>
+  </ul>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">2.3 Powders – The 2025 "White Powder Rule"</h3>
+
+<p class="text-lg text-gray-700 mb-4">Since 2018, powders have faced extreme scrutiny due to security concerns. In 2025, this has intensified:</p>
+
+<div class="bg-red-50 border-2 border-red-300 rounded-xl p-6 mb-8">
+  <p class="font-bold text-red-800 mb-4">🔬 Powder Restrictions:</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>Unidentified white powders:</strong> Instant customs detention for testing (7-30 days)</li>
+    <li>• <strong>Protein powder, baby formula, supplements:</strong> Require ingredient declarations and safety certifications</li>
+    <li>• <strong>Cosmetic powders (makeup, talc):</strong> Need labeling with full ingredient list</li>
+    <li>• <strong>Industrial powders:</strong> Chemical safety data sheets (SDS) mandatory</li>
+  </ul>
+  <p class="text-gray-700 mt-4"><strong>Best practice:</strong> Ship powders with complete ingredient documentation, preferably in original branded packaging. Generic white bottles with Chinese-only labels will absolutely get detained.</p>
+</div>
+
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Section 3: Country-Specific Crackdowns (2025 Updates)</h2>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">3.1 United States – CBP Type 86 Scrutiny</h3>
+
+<p class="text-lg text-gray-700 mb-4">US Customs and Border Protection (CBP) has massively increased enforcement under <strong>Type 86 entry regulations</strong> (de minimis shipments under $800):</p>
+
+<div class="bg-blue-50 rounded-xl p-6 mb-6">
+  <p class="font-bold text-blue-800 mb-4">🇺🇸 US-Specific Restrictions (2025):</p>
+  <ul class="space-y-3 text-gray-700">
+    <li>• <strong>USMCA fraud detection:</strong> CBP now cross-references supplier data to catch false origin declarations</li>
+    <li>• <strong>Section 321 abuse enforcement:</strong> Split shipments to avoid duties now trigger audits</li>
+    <li>• <strong>FDA compliance:</strong> Food, supplements, cosmetics, medical devices require FDA registration (even personal imports)</li>
+    <li>• <strong>Textile traceability:</strong> Apparel from Xinjiang region subject to UFLPA (Uyghur Forced Labor Prevention Act) seizure unless proven otherwise</li>
+  </ul>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">3.2 European Union – ICS2 Release 3 Data Requirements</h3>
+
+<p class="text-lg text-gray-700 mb-4">The EU's Import Control System 2 (ICS2) <strong>Release 3</strong> went live in March 2024, requiring pre-arrival customs data for ALL shipments:</p>
+
+<div class="bg-purple-50 rounded-xl p-6 mb-6">
+  <p class="font-bold text-purple-800 mb-4">🇪🇺 EU ICS2 Requirements:</p>
+  <ul class="space-y-3 text-gray-700">
+    <li>• <strong>Entry Summary Declaration (ENS):</strong> Required 4 hours before cargo arrival at EU border</li>
+    <li>• <strong>HS codes mandatory:</strong> Every item needs 6-digit HS code classification</li>
+    <li>• <strong>Shipper & consignee details:</strong> Full business registration numbers (EORI for EU entities)</li>
+    <li>• <strong>Failure to comply:</strong> Shipments refused entry or held for weeks whilst data is corrected</li>
+  </ul>
+  <p class="text-gray-700 mt-4"><strong>Impact:</strong> Many Chinese suppliers don't understand ICS2 requirements. Use a <a href="/services/global-shipping" class="text-pfc-purple hover:text-pfc-orange underline">freight forwarder with EU customs expertise</a> to avoid costly delays.</p>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">3.3 United Kingdom – Post-Brexit Complexity</h3>
+
+<div class="bg-orange-50 rounded-xl p-6 mb-6">
+  <p class="font-bold text-orange-800 mb-4">🇬🇧 UK-Specific Changes (Post-Brexit):</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>GB EORI number required:</strong> Both shipper and receiver need UK customs registration</li>
+    <li>• <strong>VAT on all imports:</strong> No more £15 de minimis—VAT charged on everything</li>
+    <li>• <strong>CE marking no longer valid:</strong> Products need UKCA marking for compliance</li>
+    <li>• <strong>Different rules for Northern Ireland:</strong> NI still follows EU rules (dual system complexity)</li>
+  </ul>
+</div>
+
+<h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">3.4 Australia – Biosecurity Obsession</h3>
+
+<div class="bg-green-50 rounded-xl p-6 mb-8">
+  <p class="font-bold text-green-800 mb-4">🇦🇺 Australia's Strict Biosecurity:</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>Wooden items:</strong> ISPM-15 certification mandatory (heat-treated or fumigated)</li>
+    <li>• <strong>Seeds, plants, soil:</strong> Absolutely prohibited without import permits</li>
+    <li>• <strong>Food products:</strong> Extremely strict—even packaged snacks can be rejected</li>
+    <li>• <strong>Animal products:</strong> Leather, wool, fur need veterinary certificates</li>
+  </ul>
+  <p class="text-gray-700 mt-4"><strong>Consequence:</strong> Australia destroys non-compliant shipments—no exceptions, no returns. Always verify biosecurity requirements before shipping.</p>
+</div>
+
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Section 4: How PFC Express Handles Compliance</h2>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">Look, navigating these restrictions is genuinely complex—and that's coming from someone who's been doing this professionally for over a decade. Here's how we help our clients stay compliant whilst avoiding expensive mistakes:</p>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="bg-blue-50 rounded-xl p-6">
+    <h4 class="text-xl font-bold text-blue-800 mb-4">🔍 Pre-Shipment Compliance Audit</h4>
+    <p class="text-gray-700 mb-3">Before accepting any inventory into our Shenzhen warehouse, we verify:</p>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• Product classification (HS codes)</li>
+      <li>• Dangerous goods status (IATA compliance)</li>
+      <li>• Destination country restrictions</li>
+      <li>• Required certifications (UN38.3, ISPM-15, FDA, etc.)</li>
+    </ul>
+    <p class="text-gray-700 mt-3 text-sm italic">If something can't be shipped legally, we'll tell you BEFORE you order 1,000 units.</p>
+  </div>
+
+  <div class="bg-purple-50 rounded-xl p-6">
+    <h4 class="text-xl font-bold text-purple-800 mb-4">📋 Documentation Management</h4>
+    <p class="text-gray-700 mb-3">We handle the paperwork nightmare:</p>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• Commercial invoices with accurate valuations</li>
+      <li>• Certificate of Origin (when needed)</li>
+      <li>• Dangerous Goods Declarations (IATA DG forms)</li>
+      <li>• Safety Data Sheets (SDS) for chemicals</li>
+      <li>• ICS2 Entry Summary Declarations (EU shipments)</li>
+    </ul>
+  </div>
+
+  <div class="bg-orange-50 rounded-xl p-6">
+    <h4 class="text-xl font-bold text-orange-800 mb-4">📦 Compliant Packaging & Labeling</h4>
+    <p class="text-gray-700 mb-3">Proper packaging prevents rejections:</p>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• IATA-compliant battery packaging (UN3481)</li>
+      <li>• Leak-proof liquid containers with absorbent material</li>
+      <li>• Proper hazard labeling (diamonds, pictograms)</li>
+      <li>• Country-of-origin marking (Made in China stamps)</li>
+    </ul>
+  </div>
+
+  <div class="bg-green-50 rounded-xl p-6">
+    <h4 class="text-xl font-bold text-green-800 mb-4">🚛 Carrier Selection & Routing</h4>
+    <p class="text-gray-700 mb-3">We choose carriers based on restrictions:</p>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• <strong>Dangerous goods:</strong> DHL/FedEx only (IATA certified)</li>
+      <li>• <strong>High-value goods:</strong> Insured express shipping</li>
+      <li>• <strong>Time-critical:</strong> Air freight with customs broker support</li>
+      <li>• <strong>Bulk inventory:</strong> Sea freight with proper documentation</li>
+    </ul>
+  </div>
+</div>
+
+<div class="bg-gradient-to-r from-pfc-orange to-pfc-purple rounded-2xl p-8 text-white text-center my-10">
+  <h3 class="text-3xl font-bold mb-4">Shipping Something Complex? Get Expert Guidance</h3>
+  <p class="text-xl mb-6">Our compliance team reviews your products for free and provides a clear "can ship / cannot ship" assessment.</p>
+  <a href="/contact" class="inline-block bg-white text-pfc-purple hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl">
+    Get Free Compliance Check
+  </a>
+</div>
+
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Final Checklist: Before You Ship from China</h2>
+
+<div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 mb-10">
+  <p class="text-lg text-gray-800 mb-6"><strong>Use this checklist for EVERY shipment:</strong></p>
+  <div class="space-y-3">
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Product classification verified:</strong> HS code accurate and matches product description</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Dangerous goods check:</strong> If batteries/liquids/powders, do I have proper documentation?</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Destination country regulations:</strong> Confirmed no specific bans (FDA, biosecurity, etc.)</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Trademark clearance:</strong> No brand logos unless I have authorisation</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Packaging compliant:</strong> Meets IATA/carrier requirements if needed</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Documentation ready:</strong> Commercial invoice, certificates, declarations complete</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Carrier confirmed acceptance:</strong> If grey-area item, carrier explicitly approved it</span>
+    </label>
+    <label class="flex items-start gap-3 text-gray-700">
+      <input type="checkbox" class="mt-1" />
+      <span><strong>Insurance purchased:</strong> High-value or risky shipments covered</span>
+    </label>
+  </div>
+</div>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">Shipping restrictions from China will only get more complex in 2025 and beyond—governments worldwide are tightening import controls, and carriers are increasingly risk-averse. The key to success is working with <a href="/services/global-shipping" class="text-pfc-purple hover:text-pfc-orange underline font-semibold">logistics partners who understand these regulations intimately</a> and can navigate them on your behalf.</p>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">If you're unsure whether your product can be shipped, don't guess—reach out to us for a free compliance review. It's far cheaper than dealing with a seized shipment after the fact.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+  <p class="font-bold text-gray-800 mb-2">📞 Need Shipping Compliance Help?</p>
+  <p class="text-gray-700 mb-4">Our Shenzhen-based logistics team handles complex compliance requirements daily. Get in touch:</p>
+  <ul class="space-y-2 text-gray-700">
+    <li>• <strong>Email:</strong> <a href="mailto:sales@parcelfromchina.com" class="text-pfc-purple hover:text-pfc-orange underline">sales@parcelfromchina.com</a></li>
+    <li>• <strong>Phone:</strong> <a href="tel:+8615338777612" class="text-pfc-purple hover:text-pfc-orange underline">+86 15338777612</a></li>
+    <li>• <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/noel-murphy-ecommerce-china" target="_blank" rel="noopener noreferrer" class="text-pfc-purple hover:text-pfc-orange underline">Connect with Noel Murphy</a></li>
+  </ul>
+</div>
+`
   }
 ]
 
