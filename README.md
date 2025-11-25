@@ -113,8 +113,24 @@ npm run build
 - Trust badges
 
 ### 📦 Services Pages
-- Ecommerce Fulfillment
-- Warehousing Solutions (200,000+ sq.ft)
+
+#### ✅ Completed
+- **Ecommerce Fulfillment** - `/services/ecommerce-fulfillment`
+  - Cut fulfillment costs by 40% with China-based operations
+  - 4-step automated workflow from receiving to shipping
+  - Integration with Shopify, WooCommerce, Amazon, eBay
+  - 8 comprehensive FAQ questions for SEO
+  
+- **Warehousing Solutions** - `/services/warehousing-solutions`
+  - 3 warehouse types: Standard (Shenzhen), Bonded (Guangzhou Airport), Virtual Address
+  - 90 days free storage, 40% cost savings vs US warehousing
+  - Bonded warehouse at Guangzhou Baiyun Airport with better flight connections
+  - Returns importing via Hong Kong truck and air express
+  - Virtual address for Taobao/JD.com order consolidation
+  - WMS with real-time tracking, barcode scanning, automated workflows
+  - 6 comprehensive FAQ questions for SEO
+
+#### 🚧 To Be Built
 - Global Shipping (30+ carriers)
 - Amazon FBA Prep
 - Custom Solutions
@@ -277,17 +293,22 @@ npm run deploy:prod
 
 ### ✅ Completed Features
 - [x] Modern homepage with animated hero
-- [x] Core services pages
+- [x] Core services pages framework
+- [x] **Ecommerce Fulfillment service page** - Comprehensive page with competitor analysis
+- [x] **Warehousing Solutions service page** - 3 warehouse types, 90 days free storage
 - [x] Interactive pricing calculator
 - [x] Contact form with validation
 - [x] FAQ with search functionality
 - [x] Mobile-responsive design
-- [x] SEO schema markup
+- [x] SEO schema markup and FAQ optimization
 - [x] Performance optimization
 - [x] Git repository initialized
+- [x] Professional branding with PFC logo (horizontal format)
 
 ### 🚧 In Progress
-- [ ] Detailed service pages with case studies
+- [ ] Global Shipping service page
+- [ ] Amazon FBA Prep service page
+- [ ] Custom Solutions service page
 - [ ] Virtual warehouse tour (360° photos)
 - [ ] Client dashboard preview
 - [ ] Integration guides
@@ -340,4 +361,29 @@ Copyright © 2025 PFC Logistics (Royal Logistics Group). All rights reserved.
 
 **Built with ❤️ by PFC Logistics Team**
 
-*Last Updated: January 2025*
+*Last Updated: November 25, 2025*
+
+---
+
+## 📝 Recent Changes
+
+### November 25, 2025
+- ✅ **Warehousing Solutions Page**: Added comprehensive service page with 3 warehouse types
+  - Standard Warehouse (Shenzhen) - 90 days free storage
+  - Bonded Warehouse (Guangzhou Baiyun Airport) - duty-free zone with better flight connections
+  - Virtual Address (Shenzhen) - order consolidation for Taobao/JD.com purchases
+  - Updated bonded warehouse location to Guangzhou Airport per user specification
+  - Includes returns importing via Hong Kong truck and air express
+  - WMS capabilities: real-time tracking, barcode scanning, climate control
+  - 6 comprehensive FAQ questions for SEO optimization
+
+### November 24, 2025
+- ✅ **Ecommerce Fulfillment Page**: Created comprehensive service page based on competitor analysis
+  - Research: nextsmartships.com and portless.com
+  - Applied direct response copywriting principles
+  - 8 comprehensive FAQ questions for SEO
+  
+- ✅ **Logo Updates**: Fixed logo display issues and improved visibility
+  - Updated to new PFC logo (horizontal format 1280x543)
+  - Increased header logo: h-16 md:h-20 (64px mobile, 80px desktop)
+  - Increased footer logo: h-20 (80px)
