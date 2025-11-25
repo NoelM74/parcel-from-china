@@ -15,6 +15,7 @@ import { PricingPage } from './pages/pricing'
 import { ContactPage } from './pages/contact'
 import { FaqPage } from './pages/faq'
 import { OnlineRetailersPage } from './pages/online-retailers'
+import { CrowdfundingPage } from './pages/crowdfunding'
 
 type Bindings = {
   RESEND_API_KEY: string
@@ -330,6 +331,7 @@ app.get('/services/amazon-fba-prep', (c) => c.html(<AmazonFBAPrepPage />))
 app.get('/services/custom-solutions', (c) => c.html(<CustomSolutionsPage />))
 app.get('/services/:service?', (c) => c.html(<ServicesPage service={c.req.param('service')} />))
 app.get('/solutions/online-retailers', (c) => c.html(<OnlineRetailersPage />))
+app.get('/solutions/crowdfunding', (c) => c.html(<CrowdfundingPage />))
 app.get('/solutions/:industry?', (c) => c.html(<SolutionsPage industry={c.req.param('industry')} />))
 app.get('/about', (c) => c.html(<AboutPage />))
 app.get('/pricing', (c) => c.html(<PricingPage />))
