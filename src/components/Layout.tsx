@@ -145,6 +145,7 @@ const Header = () => (
           
           <a href="/about" class="text-gray-700 hover:text-pfc-orange transition">About Us</a>
           <a href="/pricing" class="text-gray-700 hover:text-pfc-orange transition">Pricing</a>
+          <a href="/blog" class="text-gray-700 hover:text-pfc-orange transition">Blog</a>
           <a href="/faq" class="text-gray-700 hover:text-pfc-orange transition">FAQ</a>
         </div>
         
@@ -174,6 +175,7 @@ const Header = () => (
         <a href="/solutions/crowdfunding" class="block py-2 text-gray-700">💰 Crowdfunding</a>
         <a href="/about" class="block py-2 text-gray-700">🏢 About Us</a>
         <a href="/pricing" class="block py-2 text-gray-700">📊 Pricing</a>
+        <a href="/blog" class="block py-2 text-gray-700">📚 Blog</a>
         <a href="/faq" class="block py-2 text-gray-700">❓ FAQ</a>
         <a href="/contact" class="block py-2 btn btn-primary text-center">Get Quote</a>
       </div>

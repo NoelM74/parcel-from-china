@@ -21,6 +21,9 @@ import { AmazonFBASellersPage } from './pages/amazon-fba-sellers'
 import { SubscriptionBoxesPage } from './pages/subscription-boxes'
 import { PrivacyPolicyPage } from './pages/privacy-policy'
 import { TermsOfServicePage } from './pages/terms-of-service'
+import { BlogPage } from './pages/blog'
+import { BlogPostPage } from './pages/blog-post'
+import { getPostBySlug, getAllCategories } from './data/blog-posts'
 
 type Bindings = {
   RESEND_API_KEY: string
@@ -347,5 +350,21 @@ app.get('/contact', (c) => c.html(<ContactPage />))
 app.get('/faq', (c) => c.html(<FaqPage />))
 app.get('/privacy-policy', (c) => c.html(<PrivacyPolicyPage />))
 app.get('/terms-of-service', (c) => c.html(<TermsOfServicePage />))
+
+// Blog routes
+app.get('/blog', (c) => c.html(<BlogPage />))
+app.get('/blog/category/:category', (c) => {
+  const category = c.req.param('category')
+  const categoryName = category.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+  return c.html(<BlogPage category={categoryName} />)
+})
+app.get('/blog/:slug', (c) => {
+  const slug = c.req.param('slug')
+  const post = getPostBySlug(slug)
+  if (!post) {
+    return c.redirect('/blog')
+  }
+  return c.html(<BlogPostPage post={post} />)
+})
 
 export default app
