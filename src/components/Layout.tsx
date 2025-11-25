@@ -97,7 +97,7 @@ const Header = () => (
               <a href="/services/ecommerce-fulfillment" class="block px-4 py-3 hover:bg-gray-50">
                 <i class="fas fa-box text-pfc-orange mr-2"></i> Ecommerce Fulfillment
               </a>
-              <a href="/services/warehousing" class="block px-4 py-3 hover:bg-gray-50">
+              <a href="/services/warehousing-solutions" class="block px-4 py-3 hover:bg-gray-50">
                 <i class="fas fa-warehouse text-pfc-orange mr-2"></i> Warehousing Solutions
               </a>
               <a href="/services/global-shipping" class="block px-4 py-3 hover:bg-gray-50">
@@ -160,7 +160,7 @@ const Header = () => (
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
       <div class="px-4 py-4 space-y-3">
         <a href="/services/ecommerce-fulfillment" class="block py-2 text-gray-700">📦 Ecommerce Fulfillment</a>
-        <a href="/services/warehousing" class="block py-2 text-gray-700">🏭 Warehousing Solutions</a>
+        <a href="/services/warehousing-solutions" class="block py-2 text-gray-700">🏭 Warehousing Solutions</a>
         <a href="/services/global-shipping" class="block py-2 text-gray-700">🚚 Global Shipping</a>
         <a href="/services/amazon-fba" class="block py-2 text-gray-700">📦 Amazon FBA Prep</a>
         <a href="/solutions/online-retailers" class="block py-2 text-gray-700">🛒 Online Retailers</a>
@@ -199,7 +199,7 @@ const Footer = () => (
           <h3 class="font-bold mb-4">Services</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="/services/ecommerce-fulfillment" class="text-gray-400 hover:text-pfc-orange transition">Ecommerce Fulfillment</a></li>
-            <li><a href="/services/warehousing" class="text-gray-400 hover:text-pfc-orange transition">Warehousing Solutions</a></li>
+            <li><a href="/services/warehousing-solutions" class="text-gray-400 hover:text-pfc-orange transition">Warehousing Solutions</a></li>
             <li><a href="/services/global-shipping" class="text-gray-400 hover:text-pfc-orange transition">Global Shipping</a></li>
             <li><a href="/services/amazon-fba" class="text-gray-400 hover:text-pfc-orange transition">Amazon FBA Prep</a></li>
             <li><a href="/services/custom-solutions" class="text-gray-400 hover:text-pfc-orange transition">Custom Solutions</a></li>
