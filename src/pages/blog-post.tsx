@@ -15,8 +15,10 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
           "description": post.excerpt,
           "image": post.image,
           "author": {
-            "@type": "Organization",
-            "name": post.author
+            "@type": "Person",
+            "name": post.author,
+            ...(post.authorRole && { "jobTitle": post.authorRole }),
+            ...(post.authorImage && { "image": post.authorImage })
           },
           "publisher": {
             "@type": "Organization",
@@ -82,11 +84,22 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
                   
                   <div class="flex flex-wrap items-center gap-4 mb-6 pb-6 border-b border-gray-200">
                     <div class="flex items-center gap-3">
-                      <div class="w-12 h-12 bg-gradient-to-br from-pfc-orange to-pfc-purple rounded-full flex items-center justify-center">
-                        <i class="fas fa-user text-white"></i>
-                      </div>
+                      {post.authorImage ? (
+                        <img 
+                          src={post.authorImage} 
+                          alt={post.author}
+                          class="w-12 h-12 rounded-full object-cover border-2 border-pfc-orange shadow-md"
+                        />
+                      ) : (
+                        <div class="w-12 h-12 bg-gradient-to-br from-pfc-orange to-pfc-purple rounded-full flex items-center justify-center">
+                          <i class="fas fa-user text-white"></i>
+                        </div>
+                      )}
                       <div>
                         <p class="font-bold text-gray-800">{post.author}</p>
+                        {post.authorRole && (
+                          <p class="text-sm text-pfc-purple font-semibold">{post.authorRole}</p>
+                        )}
                         <p class="text-sm text-gray-500">{post.date}</p>
                       </div>
                     </div>

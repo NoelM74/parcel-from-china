@@ -5,6 +5,8 @@ export interface BlogPost {
   excerpt: string
   content: string
   author: string
+  authorRole?: string // Author's role/title
+  authorImage?: string // Author's photo URL
   date: string
   category: string
   tags: string[]
@@ -19,7 +21,9 @@ export const blogPosts: BlogPost[] = [
     slug: 'ultimate-guide-subscription-box-fulfillment-2025',
     title: 'The Ultimate Guide to Subscription Box Fulfillment in 2025',
     excerpt: 'Learn how professional subscription box fulfillment services can scale your recurring revenue business from 500 to 50,000+ subscribers without hiring warehouse staff.',
-    author: 'PFC Logistics Team',
+    author: 'Noel Chen',
+    authorRole: 'Logistics Expert & Ecommerce Consultant',
+    authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-15',
     category: 'Subscription Boxes',
     tags: ['subscription boxes', 'kitting', 'fulfillment', 'recurring revenue'],
@@ -157,7 +161,9 @@ export const blogPosts: BlogPost[] = [
     slug: 'amazon-fba-prep-requirements-checklist-2025',
     title: 'Amazon FBA Prep Requirements: Complete 2025 Checklist',
     excerpt: 'Avoid costly FBA rejections with this comprehensive prep checklist. Learn labeling standards, packaging requirements, and how prep centers save you time and money.',
-    author: 'PFC Logistics Team',
+    author: 'Noel Chen',
+    authorRole: 'Logistics Expert & Ecommerce Consultant',
+    authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-12',
     category: 'Amazon FBA',
     tags: ['amazon fba', 'fba prep', 'labeling', 'packaging'],
@@ -331,7 +337,9 @@ export const blogPosts: BlogPost[] = [
     slug: 'dropshipping-fulfillment-china',
     title: 'Dropshipping from China: 2025 Fulfillment Guide',
     excerpt: 'Cut your dropshipping fulfillment time from 15-30 days to 5-7 days with China-based warehousing. Learn how to scale dropshipping margins from 15% to 45%.',
-    author: 'PFC Logistics Team',
+    author: 'Noel Chen',
+    authorRole: 'Logistics Expert & Ecommerce Consultant',
+    authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-10',
     category: 'Dropshipping',
     tags: ['dropshipping', 'china sourcing', 'fulfillment speed', 'profit margins'],
@@ -541,16 +549,20 @@ export const blogPosts: BlogPost[] = [
     slug: 'china-post-vs-ems-vs-dhl-shipping-comparison',
     title: 'China Post vs EMS vs DHL: Which Shipping Method is Best for Your Business?',
     excerpt: 'Compare China Post, EMS, and DHL shipping methods with detailed cost analysis, delivery times, and tracking capabilities. Learn which carrier saves you the most money based on your shipment size and urgency.',
-    author: 'PFC Express Logistics Team',
+    author: 'Noel Chen',
+    authorRole: 'Logistics Expert & Ecommerce Consultant',
+    authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-20',
     category: 'Global Shipping',
     tags: ['china post', 'ems', 'dhl', 'shipping costs', 'international shipping', 'carrier comparison'],
     readTime: '15 min read',
-    image: 'https://www.genspark.ai/api/files/s/doSxsohT',
+    image: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     featured: true,
     relatedPosts: ['dropshipping-fulfillment-china', 'amazon-fba-prep-requirements-checklist-2025'],
     content: `
-<p class="text-xl text-gray-700 mb-6 leading-relaxed">Choosing the right shipping carrier from China can <strong>save you 40-60% on logistics costs</strong> or cut delivery times by 70%. This comprehensive guide compares China Post, EMS, and DHL to help you make the smartest decision for your business.</p>
+<p class="text-xl text-gray-700 mb-6 leading-relaxed">As someone who's been in the logistics business for over a decade, I've seen countless ecommerce sellers struggle with this exact question: "Which shipping carrier should I use from China?" The answer isn't always straightforward, but choosing wisely can <strong>save you 40-60% on logistics costs</strong> or slash delivery times by up to 70%.</p>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">In this comprehensive guide, I'll share my hands-on experience working with China Post, EMS, and DHL to help you make the smartest decision for your specific business needs. Whether you're shipping 10 packages a month or 10,000, understanding these carriers will transform your fulfillment strategy.</p>
 
 <div class="bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50 rounded-2xl p-8 mb-10">
   <div class="grid md:grid-cols-3 gap-6 text-center">
@@ -579,7 +591,7 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Quick Decision Guide</h2>
-<p class="text-lg text-gray-700 mb-4 leading-relaxed">Not sure which carrier to choose? Use this decision tree:</p>
+<p class="text-lg text-gray-700 mb-4 leading-relaxed">Let me save you hours of research with this simple decision framework. After shipping millions of packages from China, I've distilled the carrier selection process down to three key questions:</p>
 
 <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6 rounded-r-lg">
   <p class="font-bold text-gray-800 mb-4">🎯 Choose Your Carrier in 3 Questions:</p>
@@ -1080,11 +1092,13 @@ export const blogPosts: BlogPost[] = [
   </a>
 </div>
 
-<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">Pro Tips from PFC Express Logistics Experts</h2>
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">8 Pro Tips I've Learned Over 10+ Years in Logistics</h2>
+
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">These are the strategies I personally use and recommend to all our clients at PFC Express. Each one has saved someone thousands of dollars or prevented a major headache:</p>
 
 <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8 mb-8">
   <ol class="space-y-4 text-lg text-gray-700">
-    <li><strong>1. Use hybrid shipping strategies:</strong> Send urgent items via DHL, non-urgent via EMS, and bulk inventory via sea freight. Don't commit to one carrier for everything.</li>
+    <li><strong>1. Use hybrid shipping strategies:</strong> Here's what most successful sellers do: Send urgent items via DHL, non-urgent via EMS, and bulk inventory via sea freight. Don't commit to one carrier for everything—that's leaving money on the table.</li>
     
     <li><strong>2. Consolidate shipments:</strong> If you're ordering from multiple suppliers, consolidate into one shipment to hit EMS/DHL weight breaks (5kg, 10kg, 20kg).</li>
     
@@ -1143,9 +1157,9 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
-<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">How PFC Express Can Help</h2>
+<h2 class="text-3xl font-bold text-gray-800 mt-10 mb-6">How We Can Help You Navigate These Choices</h2>
 
-<p class="text-lg text-gray-700 mb-6 leading-relaxed">As a <strong>China-based logistics provider</strong>, PFC Express gives you access to all three carriers with negotiated rates:</p>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">Look, I get it—researching carriers and negotiating rates isn't why you started your ecommerce business. That's where we come in. As a <strong>China-based logistics provider with 10+ years of experience</strong>, PFC Express gives you instant access to all three carriers with rates that would take you years to negotiate on your own:</p>
 
 <div class="grid md:grid-cols-3 gap-6 mb-8">
   <div class="bg-orange-50 rounded-xl p-6 text-center">
