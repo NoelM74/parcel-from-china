@@ -17,6 +17,7 @@ import { FaqPage } from './pages/faq'
 import { OnlineRetailersPage } from './pages/online-retailers'
 import { CrowdfundingPage } from './pages/crowdfunding'
 import { DropshippingPage } from './pages/dropshipping'
+import { AmazonFBASellersPage } from './pages/amazon-fba-sellers'
 
 type Bindings = {
   RESEND_API_KEY: string
@@ -334,6 +335,7 @@ app.get('/services/:service?', (c) => c.html(<ServicesPage service={c.req.param(
 app.get('/solutions/online-retailers', (c) => c.html(<OnlineRetailersPage />))
 app.get('/solutions/crowdfunding', (c) => c.html(<CrowdfundingPage />))
 app.get('/solutions/dropshipping', (c) => c.html(<DropshippingPage />))
+app.get('/solutions/amazon-fba-sellers', (c) => c.html(<AmazonFBASellersPage />))
 app.get('/solutions/:industry?', (c) => c.html(<SolutionsPage industry={c.req.param('industry')} />))
 app.get('/about', (c) => c.html(<AboutPage />))
 app.get('/pricing', (c) => c.html(<PricingPage />))
