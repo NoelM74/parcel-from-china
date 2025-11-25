@@ -103,7 +103,7 @@ const Header = () => (
               <a href="/services/global-shipping" class="block px-4 py-3 hover:bg-gray-50">
                 <i class="fas fa-shipping-fast text-pfc-orange mr-2"></i> Global Shipping
               </a>
-              <a href="/services/amazon-fba" class="block px-4 py-3 hover:bg-gray-50">
+              <a href="/services/amazon-fba-prep" class="block px-4 py-3 hover:bg-gray-50">
                 <i class="fab fa-amazon text-pfc-orange mr-2"></i> Amazon FBA Prep
               </a>
               <a href="/services/custom-solutions" class="block px-4 py-3 hover:bg-gray-50">
@@ -162,7 +162,7 @@ const Header = () => (
         <a href="/services/ecommerce-fulfillment" class="block py-2 text-gray-700">📦 Ecommerce Fulfillment</a>
         <a href="/services/warehousing-solutions" class="block py-2 text-gray-700">🏭 Warehousing Solutions</a>
         <a href="/services/global-shipping" class="block py-2 text-gray-700">🚚 Global Shipping</a>
-        <a href="/services/amazon-fba" class="block py-2 text-gray-700">📦 Amazon FBA Prep</a>
+        <a href="/services/amazon-fba-prep" class="block py-2 text-gray-700">📦 Amazon FBA Prep</a>
         <a href="/solutions/online-retailers" class="block py-2 text-gray-700">🛒 Online Retailers</a>
         <a href="/solutions/crowdfunding" class="block py-2 text-gray-700">💰 Crowdfunding</a>
         <a href="/about" class="block py-2 text-gray-700">🏢 About Us</a>
@@ -201,7 +201,7 @@ const Footer = () => (
             <li><a href="/services/ecommerce-fulfillment" class="text-gray-400 hover:text-pfc-orange transition">Ecommerce Fulfillment</a></li>
             <li><a href="/services/warehousing-solutions" class="text-gray-400 hover:text-pfc-orange transition">Warehousing Solutions</a></li>
             <li><a href="/services/global-shipping" class="text-gray-400 hover:text-pfc-orange transition">Global Shipping</a></li>
-            <li><a href="/services/amazon-fba" class="text-gray-400 hover:text-pfc-orange transition">Amazon FBA Prep</a></li>
+            <li><a href="/services/amazon-fba-prep" class="text-gray-400 hover:text-pfc-orange transition">Amazon FBA Prep</a></li>
             <li><a href="/services/custom-solutions" class="text-gray-400 hover:text-pfc-orange transition">Custom Solutions</a></li>
           </ul>
         </div>

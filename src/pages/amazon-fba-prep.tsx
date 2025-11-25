@@ -312,8 +312,42 @@ export const AmazonFBAPrepPage = () => {
         </div>
       </section>
 
-      {/* FBA Prep Services - Comprehensive List */}
+      {/* Visual Process Infographic */}
       <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Complete FBA Prep Process Visualized
+            </h2>
+            <p class="text-xl text-gray-600">
+              See exactly how we prepare your inventory for Amazon FBA success
+            </p>
+          </div>
+
+          <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-2xl border-2 border-blue-200">
+              <img 
+                src="/static/images/amazon-fba-prep-infographic.png" 
+                alt="PFC Express Amazon FBA Prep Process Infographic - Complete step-by-step workflow" 
+                class="w-full h-auto rounded-xl shadow-lg"
+              />
+            </div>
+            
+            <div class="mt-8 text-center">
+              <p class="text-gray-600 mb-6">
+                <strong>Every step handled with precision:</strong> From receiving your inventory to delivering it Amazon-ready at the fulfillment center
+              </p>
+              <a href="/contact" class="btn bg-pfc-orange text-white hover:bg-orange-600 border-none shadow-lg text-lg px-8 py-4">
+                <i class="fas fa-comments mr-2"></i>
+                Discuss Your FBA Prep Needs
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FBA Prep Services - Comprehensive List */}
+      <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
