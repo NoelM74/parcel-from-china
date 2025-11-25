@@ -37,6 +37,24 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
         })
       }}></script>
 
+      {/* FAQ Schema Markup for SEO (if FAQ exists) */}
+      {post.faqSchema && post.faqSchema.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": post.faqSchema.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}></script>
+      )}
+
       {/* Breadcrumbs for SEO */}
       <nav class="bg-gray-50 border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -177,13 +195,24 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
                 {/* Author Bio */}
                 <div class="mt-12 bg-gradient-to-br from-orange-50 to-purple-50 rounded-2xl p-8 border-2 border-purple-200">
                   <div class="flex items-start gap-6">
-                    <div class="w-20 h-20 bg-gradient-to-br from-pfc-orange to-pfc-purple rounded-full flex items-center justify-center flex-shrink-0">
-                      <i class="fas fa-users text-white text-2xl"></i>
-                    </div>
+                    {post.authorImage ? (
+                      <img 
+                        src={post.authorImage} 
+                        alt={post.author}
+                        class="w-20 h-20 rounded-full object-cover border-4 border-pfc-orange shadow-lg flex-shrink-0"
+                      />
+                    ) : (
+                      <div class="w-20 h-20 bg-gradient-to-br from-pfc-orange to-pfc-purple rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-user text-white text-2xl"></i>
+                      </div>
+                    )}
                     <div>
                       <h3 class="text-2xl font-bold text-gray-800 mb-3">About {post.author}</h3>
+                      {post.authorRole && (
+                        <p class="text-pfc-purple font-semibold mb-2">{post.authorRole}</p>
+                      )}
                       <p class="text-gray-700 leading-relaxed mb-4">
-                        The PFC Logistics team operates 200,000+ sq.ft of fulfillment space in Shenzhen, China, serving thousands of ecommerce sellers worldwide. Our experts specialize in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping.
+                        {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
                       </p>
                       <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
                         Learn more about our team <i class="fas fa-arrow-right text-sm"></i>

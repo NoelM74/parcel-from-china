@@ -14,6 +14,10 @@ export interface BlogPost {
   image: string
   featured: boolean
   relatedPosts?: string[] // slugs of related posts for internal linking
+  faqSchema?: Array<{
+    question: string
+    answer: string
+  }> // FAQ schema for SEO
 }
 
 export const blogPosts: BlogPost[] = [
@@ -21,7 +25,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'ultimate-guide-subscription-box-fulfillment-2025',
     title: 'The Ultimate Guide to Subscription Box Fulfillment in 2025',
     excerpt: 'Learn how professional subscription box fulfillment services can scale your recurring revenue business from 500 to 50,000+ subscribers without hiring warehouse staff.',
-    author: 'Noel Chen',
+    author: 'Noel Murphy',
     authorRole: 'Logistics Expert & Ecommerce Consultant',
     authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-15',
@@ -161,7 +165,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'amazon-fba-prep-requirements-checklist-2025',
     title: 'Amazon FBA Prep Requirements: Complete 2025 Checklist',
     excerpt: 'Avoid costly FBA rejections with this comprehensive prep checklist. Learn labeling standards, packaging requirements, and how prep centers save you time and money.',
-    author: 'Noel Chen',
+    author: 'Noel Murphy',
     authorRole: 'Logistics Expert & Ecommerce Consultant',
     authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-12',
@@ -337,7 +341,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'dropshipping-fulfillment-china',
     title: 'Dropshipping from China: 2025 Fulfillment Guide',
     excerpt: 'Cut your dropshipping fulfillment time from 15-30 days to 5-7 days with China-based warehousing. Learn how to scale dropshipping margins from 15% to 45%.',
-    author: 'Noel Chen',
+    author: 'Noel Murphy',
     authorRole: 'Logistics Expert & Ecommerce Consultant',
     authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-10',
@@ -549,16 +553,42 @@ export const blogPosts: BlogPost[] = [
     slug: 'china-post-vs-ems-vs-dhl-shipping-comparison',
     title: 'China Post vs EMS vs DHL: Which Shipping Method is Best for Your Business?',
     excerpt: 'Compare China Post, EMS, and DHL shipping methods with detailed cost analysis, delivery times, and tracking capabilities. Learn which carrier saves you the most money based on your shipment size and urgency.',
-    author: 'Noel Chen',
+    author: 'Noel Murphy',
     authorRole: 'Logistics Expert & Ecommerce Consultant',
     authorImage: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
     date: '2025-01-20',
     category: 'Global Shipping',
     tags: ['china post', 'ems', 'dhl', 'shipping costs', 'international shipping', 'carrier comparison'],
     readTime: '15 min read',
-    image: 'https://i.postimg.cc/x8bSjH6s/176041995108.png',
+    image: 'https://i.postimg.cc/MMRN8vzy/China-Post-Vs-EMS-vs-DHL-Shipping-Methods-Comparison.png',
     featured: true,
     relatedPosts: ['dropshipping-fulfillment-china', 'amazon-fba-prep-requirements-checklist-2025'],
+    faqSchema: [
+      {
+        question: "Can I track China Post packages reliably?",
+        answer: "Partially. China Post provides departure and arrival country scans, but in-transit updates are sparse. Once it enters your local postal system (USPS, Royal Mail, etc.), tracking improves. Use 17track.net for best tracking aggregation."
+      },
+      {
+        question: "Is EMS faster than China Post Air Mail?",
+        answer: "Yes, significantly. EMS averages 7-15 days vs China Post Air Mail's 15-30 days. EMS also gets priority customs clearance and faster domestic delivery once in the destination country."
+      },
+      {
+        question: "Does DHL guarantee delivery dates?",
+        answer: "DHL Express offers a money-back guarantee if delivery exceeds the quoted timeframe (typically 3-5 business days). Conditions apply (weather, customs delays excluded), but this is far more reliable than China Post or EMS estimates."
+      },
+      {
+        question: "Which carrier is best for ecommerce sellers?",
+        answer: "It depends on order value and margins: Orders under $20 use China Post (keep shipping under 10% of value), Orders $20-60 use EMS (balance speed and cost), Orders $60+ use DHL (customers expect fast delivery), and Amazon FBA restock use DHL (avoid stockouts)."
+      },
+      {
+        question: "What about sea freight for large shipments?",
+        answer: "For shipments over 100kg, consider sea freight or air freight consolidation. Sea freight costs $2-4/kg but takes 30-45 days. Air freight costs $5-8/kg with 7-12 day delivery. Both require customs broker assistance."
+      },
+      {
+        question: "Can I negotiate better rates with these carriers?",
+        answer: "China Post rates are fixed for individuals with no negotiation. EMS freight forwarders can get 10-20% discounts on bulk volumes. DHL direct business accounts get 20-40% off published rates with 100+ monthly shipments. Working with a logistics partner like PFC Express gives you access to negotiated rates without high monthly volumes."
+      }
+    ],
     content: `
 <p class="text-xl text-gray-700 mb-6 leading-relaxed">As someone who's been in the logistics business for over a decade, I've seen countless ecommerce sellers struggle with this exact question: "Which shipping carrier should I use from China?" The answer isn't always straightforward, but choosing wisely can <strong>save you 40-60% on logistics costs</strong> or slash delivery times by up to 70%.</p>
 
