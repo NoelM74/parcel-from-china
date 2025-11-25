@@ -81,14 +81,8 @@ const Header = () => (
       <div class="flex justify-between items-center h-20">
         {/* Logo */}
         <div class="flex items-center">
-          <a href="/" class="flex items-center space-x-2">
-            <div class="w-12 h-12 bg-gradient-to-br from-pfc-orange to-pfc-orange-light rounded-lg flex items-center justify-center">
-              <i class="fas fa-crown text-white text-2xl"></i>
-            </div>
-            <div class="hidden sm:block">
-              <div class="text-xl font-bold text-gray-800">PFC Logistics</div>
-              <div class="text-xs text-gray-500">Royal Logistics Group</div>
-            </div>
+          <a href="/" class="flex items-center">
+            <img src="/static/images/pfc-logo.png" alt="PFC Express - Royal Logistics Group" class="h-12 md:h-16 w-auto" />
           </a>
         </div>
         
@@ -186,14 +180,8 @@ const Footer = () => (
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
-          <div class="flex items-center space-x-2 mb-4">
-            <div class="w-10 h-10 bg-gradient-to-br from-pfc-orange to-pfc-orange-light rounded-lg flex items-center justify-center">
-              <i class="fas fa-crown text-white"></i>
-            </div>
-            <div>
-              <div class="font-bold">PFC Logistics</div>
-              <div class="text-xs text-gray-400">Royal Logistics Group</div>
-            </div>
+          <div class="mb-4">
+            <img src="/static/images/pfc-logo.png" alt="PFC Express" class="h-12 w-auto brightness-110" />
           </div>
           <p class="text-gray-400 text-sm mb-4">
             Leading China-based 3PL fulfillment services with 200,000+ sq.ft warehousing in Shenzhen.
