@@ -231,6 +231,73 @@ export const EcommerceFulfillmentPage = () => {
         </div>
       </section>
 
+      {/* Order Fulfillment Process Infographic */}
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full mb-4 font-semibold text-sm">
+              📦 PICKING PROCESS
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Inside Our Order Fulfillment Process
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how our optimized picking and packing workflow delivers 99.6% accuracy in 2-4 hours
+            </p>
+          </div>
+
+          <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-200">
+              <img 
+                src="/static/images/order-fulfillment-process-infographic.png" 
+                alt="PFC Order Fulfillment Process - Detailed picking and packing workflow infographic"
+                class="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+                width="1200"
+                height="800"
+              />
+            </div>
+            
+            <div class="mt-8 text-center">
+              <p class="text-gray-600 mb-6">
+                <strong>Every order follows our proven workflow:</strong> From receipt to quality check to accurate picking and professional packing—all within hours, not days.
+              </p>
+              <a href="/contact" class="btn bg-pfc-orange text-white hover:bg-orange-600 border-none shadow-lg text-lg px-8 py-4">
+                <i class="fas fa-rocket mr-2"></i>
+                Start Fulfilling Orders
+              </a>
+            </div>
+          </div>
+
+          {/* Process Highlights Below Infographic */}
+          <div class="grid md:grid-cols-4 gap-6 mt-12 max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl p-6 shadow-md border border-orange-100 text-center">
+              <div class="text-4xl font-bold text-pfc-orange mb-2">Step 1</div>
+              <h4 class="font-bold text-gray-900 mb-2">Order Receipt</h4>
+              <p class="text-sm text-gray-600">Automatic order sync from your store</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-md border border-blue-100 text-center">
+              <div class="text-4xl font-bold text-pfc-blue mb-2">Step 2</div>
+              <h4 class="font-bold text-gray-900 mb-2">Smart Picking</h4>
+              <p class="text-sm text-gray-600">AI-optimized route for efficiency</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-xl p-6 shadow-md border border-purple-100 text-center">
+              <div class="text-4xl font-bold text-pfc-purple mb-2">Step 3</div>
+              <h4 class="font-bold text-gray-900 mb-2">Quality Check</h4>
+              <p class="text-sm text-gray-600">Verify accuracy before packing</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-xl p-6 shadow-md border border-green-100 text-center">
+              <div class="text-4xl font-bold text-green-600 mb-2">Step 4</div>
+              <h4 class="font-bold text-gray-900 mb-2">Pack & Ship</h4>
+              <p class="text-sm text-gray-600">Professional packaging & fast dispatch</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features & Benefits */}
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
