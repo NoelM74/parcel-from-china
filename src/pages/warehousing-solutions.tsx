@@ -314,6 +314,128 @@ export const WarehousingSolutionsPage = () => {
         </div>
       </section>
 
+      {/* Warehouse Facility Showcase */}
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full mb-4 font-semibold text-sm">
+              🏢 OUR FACILITIES
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              World-Class Warehouse Facilities in Shenzhen
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              200,000+ sq.ft of modern, climate-controlled storage space with 24/7 security and advanced WMS technology
+            </p>
+          </div>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              {/* Image with overlay gradient for better text visibility */}
+              <div class="relative">
+                <img 
+                  src="/static/images/pfc-warehouse-shenzhen.png" 
+                  alt="PFC Express Warehouse Facility in Shenzhen - Modern climate-controlled storage with 24/7 security"
+                  class="w-full h-auto"
+                  loading="lazy"
+                  width="1200"
+                  height="675"
+                />
+                {/* Gradient overlay for text readability */}
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                
+                {/* Overlay badges */}
+                <div class="absolute bottom-6 left-6 right-6">
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white/95 backdrop-blur-sm rounded-lg p-4 text-center">
+                      <div class="text-2xl md:text-3xl font-bold text-gray-900">200K+</div>
+                      <p class="text-xs md:text-sm text-gray-600">Square Feet</p>
+                    </div>
+                    <div class="bg-white/95 backdrop-blur-sm rounded-lg p-4 text-center">
+                      <div class="text-2xl md:text-3xl font-bold text-gray-900">24/7</div>
+                      <p class="text-xs md:text-sm text-gray-600">Security</p>
+                    </div>
+                    <div class="bg-white/95 backdrop-blur-sm rounded-lg p-4 text-center">
+                      <div class="text-2xl md:text-3xl font-bold text-gray-900">Climate</div>
+                      <p class="text-xs md:text-sm text-gray-600">Controlled</p>
+                    </div>
+                    <div class="bg-white/95 backdrop-blur-sm rounded-lg p-4 text-center">
+                      <div class="text-2xl md:text-3xl font-bold text-gray-900">WMS</div>
+                      <p class="text-xs md:text-sm text-gray-600">Real-time</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Facility Features Below Image */}
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+              <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-md border border-blue-100">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <i class="fas fa-thermometer-half text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Climate Controlled</h3>
+                    <p class="text-sm text-gray-600">Temperature and humidity regulated to protect sensitive products year-round</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-green-50 to-white rounded-xl p-6 shadow-md border border-green-100">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <i class="fas fa-shield-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Advanced Security</h3>
+                    <p class="text-sm text-gray-600">24/7 surveillance, access control, and professional security personnel on-site</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-purple-50 to-white rounded-xl p-6 shadow-md border border-purple-100">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <i class="fas fa-laptop-code text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Smart WMS System</h3>
+                    <p class="text-sm text-gray-600">Real-time inventory tracking, automated alerts, and instant reporting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Strategic Location Benefits */}
+            <div class="mt-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl p-8 shadow-xl">
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold mb-2">Strategic Shenzhen Location</h3>
+                <p class="text-blue-100">Minutes from major ports and suppliers</p>
+              </div>
+              <div class="grid md:grid-cols-4 gap-4 text-center">
+                <div>
+                  <div class="text-3xl font-bold mb-1">15 min</div>
+                  <p class="text-sm text-blue-100">To Shenzhen Port</p>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold mb-1">30 min</div>
+                  <p class="text-sm text-blue-100">To Hong Kong Border</p>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold mb-1">1 hour</div>
+                  <p class="text-sm text-blue-100">To Guangzhou</p>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold mb-1">2 hours</div>
+                  <p class="text-sm text-blue-100">To Most Suppliers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How Virtual Address Works */}
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
