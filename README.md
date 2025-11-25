@@ -130,8 +130,21 @@ npm run build
   - WMS with real-time tracking, barcode scanning, automated workflows
   - 6 comprehensive FAQ questions for SEO
 
+- **Global Shipping** - `/services/global-shipping`
+  - **Option A Design**: ONE comprehensive page with 5 interactive shipping method tabs
+  - **5 Shipping Methods**:
+    1. Express Shipping (DHL/FedEx/UPS/EMS) - 2-5 days, $8.50+/kg
+    2. Air Freight (Commercial/FBA) - 5-10 days, $4.50+/kg
+    3. Ocean Freight (FCL/LCL) - 14-35 days, from $300/CBM
+    4. Special Lines (Regional + Sensitive Goods) - 7-12 days, $5.80+/kg
+    5. Postal Packets (ePacket/China Post) - 10-20 days, $3.20+/kg
+  - Sensitive goods specialist (batteries, liquids, powders, food)
+  - Comparison table with all methods side-by-side
+  - 30+ carrier partners (DHL, FedEx, UPS, Maersk, MSC, COSCO, China Post, etc.)
+  - Transit time and cost examples by destination
+  - 9 comprehensive FAQ questions covering all shipping types
+
 #### 🚧 To Be Built
-- Global Shipping (30+ carriers)
 - Amazon FBA Prep
 - Custom Solutions
 
@@ -296,17 +309,17 @@ npm run deploy:prod
 - [x] Core services pages framework
 - [x] **Ecommerce Fulfillment service page** - Comprehensive page with competitor analysis
 - [x] **Warehousing Solutions service page** - 3 warehouse types, 90 days free storage
+- [x] **Global Shipping service page** - 5 shipping methods with interactive tabs (Option A design)
 - [x] Interactive pricing calculator
 - [x] Contact form with validation
 - [x] FAQ with search functionality
-- [x] Mobile-responsive design
+- [x] Mobile-responsive design with tab animations
 - [x] SEO schema markup and FAQ optimization
-- [x] Performance optimization
+- [x] Performance optimization (246.67 KB bundle)
 - [x] Git repository initialized
 - [x] Professional branding with PFC logo (horizontal format)
 
 ### 🚧 In Progress
-- [ ] Global Shipping service page
 - [ ] Amazon FBA Prep service page
 - [ ] Custom Solutions service page
 - [ ] Virtual warehouse tour (360° photos)
@@ -368,6 +381,18 @@ Copyright © 2025 PFC Logistics (Royal Logistics Group). All rights reserved.
 ## 📝 Recent Changes
 
 ### November 25, 2025
+
+- ✅ **Global Shipping Page**: Comprehensive ONE-PAGE design with interactive tabs (Option A)
+  - Analyzed pfcexpress.com structure and chose unified page approach vs 5 separate pages
+  - 5 shipping method tabs: Express, Air Freight, Ocean, Special Lines, Postal
+  - Each method includes: pricing, transit times, carriers, best use cases, features
+  - Sensitive goods special section (batteries, liquids, powders, food)
+  - Comparison table with all 5 methods side-by-side
+  - 30+ carrier partners showcase
+  - 9 comprehensive FAQ questions
+  - JavaScript tab switching with CSS animations
+  - Bundle size: 246.67 KB (60% larger than before due to comprehensive content)
+
 - ✅ **Warehousing Solutions Page**: Added comprehensive service page with 3 warehouse types
   - Standard Warehouse (Shenzhen) - 90 days free storage
   - Bonded Warehouse (Guangzhou Baiyun Airport) - duty-free zone with better flight connections
