@@ -206,22 +206,77 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
                         <i class="fas fa-user text-white text-2xl"></i>
                       </div>
                     )}
-                    <div>
+                    <div class="flex-1">
                       <h3 class="text-2xl font-bold text-gray-800 mb-3">About {post.author}</h3>
                       {post.authorRole && (
                         <p class="text-pfc-purple font-semibold mb-2">{post.authorRole}</p>
                       )}
-                      <p class="text-gray-700 leading-relaxed mb-4">
-                        {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
-                      </p>
-                      <div class="flex flex-wrap gap-4">
-                        <a href="https://www.linkedin.com/in/noel-murphy-ecommerce-china" target="_blank" rel="noopener noreferrer" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
-                          <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                        </a>
-                        <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2">
-                          Learn more about our team <i class="fas fa-arrow-right text-sm"></i>
-                        </a>
+                      
+                      {/* Full bio text - hidden on mobile initially */}
+                      <div id="author-bio-full" class="hidden md:block">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                          {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                          <a href="https://www.linkedin.com/in/noel-murphy-ecommerce-china" target="_blank" rel="noopener noreferrer" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2 text-sm">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                          </a>
+                          <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2 text-sm">
+                            Learn more about our team <i class="fas fa-arrow-right text-xs"></i>
+                          </a>
+                        </div>
                       </div>
+
+                      {/* Mobile collapsible version */}
+                      <div class="md:hidden">
+                        <p id="author-bio-preview" class="text-gray-700 leading-relaxed mb-3 line-clamp-2">
+                          {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
+                        </p>
+                        <div id="author-bio-expanded" class="hidden">
+                          <p class="text-gray-700 leading-relaxed mb-4">
+                            {post.author} leads the PFC Express team operating 200,000+ sq.ft of fulfillment space in Shenzhen, China. With over a decade of experience in ecommerce logistics, {post.author.split(' ')[0]} specializes in Amazon FBA prep, subscription box kitting, dropshipping fulfillment, and international shipping solutions.
+                          </p>
+                          <div class="flex flex-wrap gap-4 mb-3">
+                            <a href="https://www.linkedin.com/in/noel-murphy-ecommerce-china" target="_blank" rel="noopener noreferrer" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2 text-sm">
+                              <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="/about" class="text-pfc-purple hover:text-pfc-orange font-bold flex items-center gap-2 text-sm">
+                              Our team <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <button 
+                          id="author-bio-toggle"
+                          onclick="toggleAuthorBio()"
+                          class="text-pfc-purple hover:text-pfc-orange font-bold text-sm flex items-center gap-1"
+                        >
+                          <span id="toggle-text">Read more</span>
+                          <i id="toggle-icon" class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                      </div>
+
+                      <script dangerouslySetInnerHTML={{__html: `
+                        function toggleAuthorBio() {
+                          const preview = document.getElementById('author-bio-preview');
+                          const expanded = document.getElementById('author-bio-expanded');
+                          const toggleText = document.getElementById('toggle-text');
+                          const toggleIcon = document.getElementById('toggle-icon');
+                          
+                          if (expanded.classList.contains('hidden')) {
+                            preview.classList.add('hidden');
+                            expanded.classList.remove('hidden');
+                            toggleText.textContent = 'Read less';
+                            toggleIcon.classList.remove('fa-chevron-down');
+                            toggleIcon.classList.add('fa-chevron-up');
+                          } else {
+                            preview.classList.remove('hidden');
+                            expanded.classList.add('hidden');
+                            toggleText.textContent = 'Read more';
+                            toggleIcon.classList.remove('fa-chevron-up');
+                            toggleIcon.classList.add('fa-chevron-down');
+                          }
+                        }
+                      `}}></script>
                     </div>
                   </div>
                 </div>
