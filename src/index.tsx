@@ -23,7 +23,7 @@ import { PrivacyPolicyPage } from './pages/privacy-policy'
 import { TermsOfServicePage } from './pages/terms-of-service'
 import { BlogPage } from './pages/blog'
 import { BlogPostPage } from './pages/blog-post'
-import { getPostBySlug, getAllCategories } from './data/blog-posts'
+import { getPostBySlug, getAllCategories, blogPosts } from './data/blog-posts'
 
 type Bindings = {
   RESEND_API_KEY: string
@@ -350,6 +350,101 @@ app.get('/contact', (c) => c.html(<ContactPage />))
 app.get('/faq', (c) => c.html(<FaqPage />))
 app.get('/privacy-policy', (c) => c.html(<PrivacyPolicyPage />))
 app.get('/terms-of-service', (c) => c.html(<TermsOfServicePage />))
+
+// SEO Routes - Sitemap and Robots
+app.get('/sitemap.xml', (c) => {
+  const baseUrl = 'https://pfc-logistics.pages.dev'
+  const today = new Date().toISOString().split('T')[0]
+  
+  // Static pages with priority and change frequency
+  const staticPages = [
+    { url: '', priority: '1.0', changefreq: 'daily' }, // Homepage
+    { url: '/about', priority: '0.8', changefreq: 'monthly' },
+    { url: '/pricing', priority: '0.9', changefreq: 'weekly' },
+    { url: '/contact', priority: '0.9', changefreq: 'monthly' },
+    { url: '/faq', priority: '0.7', changefreq: 'monthly' },
+    { url: '/blog', priority: '0.9', changefreq: 'daily' },
+    // Services
+    { url: '/services/ecommerce-fulfillment', priority: '0.9', changefreq: 'monthly' },
+    { url: '/services/warehousing-solutions', priority: '0.9', changefreq: 'monthly' },
+    { url: '/services/global-shipping', priority: '0.9', changefreq: 'monthly' },
+    { url: '/services/amazon-fba-prep', priority: '0.9', changefreq: 'monthly' },
+    { url: '/services/custom-solutions', priority: '0.8', changefreq: 'monthly' },
+    // Solutions
+    { url: '/solutions/online-retailers', priority: '0.8', changefreq: 'monthly' },
+    { url: '/solutions/crowdfunding', priority: '0.8', changefreq: 'monthly' },
+    { url: '/solutions/dropshipping', priority: '0.8', changefreq: 'monthly' },
+    { url: '/solutions/amazon-fba-sellers', priority: '0.8', changefreq: 'monthly' },
+    { url: '/solutions/subscription-boxes', priority: '0.8', changefreq: 'monthly' },
+    // Legal
+    { url: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },
+    { url: '/terms-of-service', priority: '0.3', changefreq: 'yearly' }
+  ]
+  
+  // Blog posts - dynamically generated
+  const blogPostUrls = blogPosts.map(post => ({
+    url: `/blog/${post.slug}`,
+    priority: post.featured ? '0.9' : '0.8',
+    changefreq: 'weekly',
+    lastmod: post.date
+  }))
+  
+  // Blog categories
+  const categories = getAllCategories()
+  const categoryUrls = categories.map(cat => ({
+    url: `/blog/category/${cat.toLowerCase().replace(/\s+/g, '-')}`,
+    priority: '0.7',
+    changefreq: 'daily'
+  }))
+  
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${staticPages.map(page => `  <url>
+    <loc>${baseUrl}${page.url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`).join('\n')}
+${blogPostUrls.map(page => `  <url>
+    <loc>${baseUrl}${page.url}</loc>
+    <lastmod>${page.lastmod}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`).join('\n')}
+${categoryUrls.map(page => `  <url>
+    <loc>${baseUrl}${page.url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`).join('\n')}
+</urlset>`
+  
+  c.header('Content-Type', 'application/xml')
+  c.header('Cache-Control', 'public, max-age=3600') // Cache for 1 hour
+  return c.body(xml)
+})
+
+app.get('/robots.txt', (c) => {
+  const robotsTxt = `# Robots.txt for PFC Logistics
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://pfc-logistics.pages.dev/sitemap.xml
+
+# Crawl-delay for specific bots (optional)
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 0
+`
+  
+  c.header('Content-Type', 'text/plain')
+  c.header('Cache-Control', 'public, max-age=86400') // Cache for 24 hours
+  return c.body(robotsTxt)
+})
 
 // Blog routes
 app.get('/blog', (c) => c.html(<BlogPage />))
