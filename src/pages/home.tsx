@@ -248,7 +248,7 @@ export const HomePage = () => {
             </a>
             
             {/* Service 2 */}
-            <a href="/services/warehousing" class="card group cursor-pointer border-2 border-transparent hover:border-pfc-blue">
+            <a href="/services/warehousing-solutions" class="card group cursor-pointer border-2 border-transparent hover:border-pfc-blue">
               <div class="w-20 h-20 bg-gradient-to-br from-pfc-blue to-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                 <i class="fas fa-dollar-sign text-white text-4xl"></i>
               </div>
@@ -306,7 +306,7 @@ export const HomePage = () => {
             </a>
             
             {/* Service 4 */}
-            <a href="/services/amazon-fba" class="card group cursor-pointer border-2 border-transparent hover:border-yellow-500">
+            <a href="/services/amazon-fba-prep" class="card group cursor-pointer border-2 border-transparent hover:border-yellow-500">
               <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                 <i class="fab fa-amazon text-white text-4xl"></i>
               </div>
